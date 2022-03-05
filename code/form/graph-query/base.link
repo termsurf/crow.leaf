@@ -1,0 +1,45 @@
+
+load ../number
+  take form integer-32
+
+load ../term
+  take form term
+
+form graph-query
+  link read, list graph-query-read
+  link rule, form graph-query-rule
+  link sort, list graph-query-sort
+  link size, form integer-32
+    base size 20
+  link base, form integer-32
+    base size 0
+    note <Offset>
+
+form graph-query-read
+  note <Tree of selections to make>
+  link term, form term
+  link link, list graph-query-read
+
+form graph-query-sort
+  link term
+  link fall, loan rise
+
+form graph-query-rule
+  case graph-query-test
+  case graph-query-link
+  case graph-query-toss
+  case graph-query-turn
+
+form graph-query-test-head
+  case graph-query-nest
+  case bond
+
+form graph-query-test
+  link base, form graph-query-nest
+  link head, form graph-query-test-head
+
+form graph-query-test-like, base graph-query-test
+form graph-query-test-rise, base graph-query-test
+form graph-query-test-rise-like, base graph-query-test
+form graph-query-test-fall, base graph-query-test
+form graph-query-test-fall-like, base graph-query-test

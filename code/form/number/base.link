@@ -1,0 +1,110 @@
+
+form zero
+  note <Zero>
+  link code, size 0
+
+form natural-number
+  note <Natural number>
+  link code
+
+form negative-number
+  note <Negative number>
+  link code
+
+form unsigned-integer
+  case zero
+  case natural-number
+
+form number
+  case negative-number
+  case zero
+  case natural-number
+
+stem natural-number-8-head
+  call exponentiate
+    size 2
+    size 8
+stem natural-number-16-head
+  call exponentiate
+    size 2
+    size 16
+stem natural-number-32-head
+  call exponentiate
+    size 2
+    size 32
+
+stem negative-number-8-base
+  call subtract
+    size 1
+    call exponentiate
+      size 2
+      size 8
+stem negative-number-16-base
+  call subtract
+    size 1
+    call exponentiate
+      size 2
+      size 16
+stem negative-number-32-base
+  call subtract
+    size 1
+    call exponentiate
+      size 2
+      size 32
+
+form natural-number-lock
+  form natural-number
+
+  link lock, form natural-number
+
+  test less-than
+    bind base, loan code
+    bind head, loan lock
+
+form natural-number-8
+  form natural-number-lock
+    bind lock, loan natural-number-8-head
+
+form natural-number-16
+  form natural-number-lock
+    bind lock, loan natural-number-16-head
+
+form natural-number-32
+  form natural-number-lock
+    bind lock, loan natural-number-32-head
+
+form integer-8
+  case zero
+  case negative-number-8
+  case natural-number-8
+
+form integer-16
+  case zero
+  case negative-number-16
+  case natural-number-16
+
+form integer-32
+  case zero
+  case negative-number-32
+  case natural-number-32
+
+form unsigned-integer-8
+  case zero
+  case natural-number-8
+
+form unsigned-integer-16
+  case zero
+  case natural-number-16
+
+form unsigned-integer-32
+  case zero
+  case natural-number-32
+
+form ratio
+  note <Ratio>
+
+form decimal-32
+  note <Floating point>
+
+form decimal-64
+  note <Floating point>

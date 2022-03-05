@@ -1,0 +1,12 @@
+
+load @drumwork/seed/code/form/nest
+  take form nest
+
+load @drumwork/seed/code/form/flow
+  take wear flow
+
+form save
+  wear flow
+
+  link base, like nest
+  link head, like bond

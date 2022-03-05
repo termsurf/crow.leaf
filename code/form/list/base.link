@@ -1,0 +1,21 @@
+
+load @drumwork/seed/code/form/form
+  take form form
+
+load @drumwork/seed/code/form/number
+  take form integer-32
+
+form list
+  head site, like form
+
+  link size, like integer-32
+  link base, like site, loan site
+  link head, like site, loan site
+
+form site
+  head like, like form
+
+  link base, loan like
+    void take
+  link head, loan like
+    void take

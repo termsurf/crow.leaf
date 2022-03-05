@@ -1,0 +1,11 @@
+
+form maybe
+  note <Maybe type>
+
+  head base, form form
+
+  case void
+  case some, loan base
+
+form some
+  head base, form form

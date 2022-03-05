@@ -1,0 +1,10 @@
+
+load @drumwork/seed/code/form/task
+  take form task
+
+load @drumwork/seed/code/form/term
+  take form term
+
+form hook
+  link name, like term
+  link task, like task

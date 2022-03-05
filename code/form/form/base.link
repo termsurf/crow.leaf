@@ -1,0 +1,24 @@
+
+load @drumwork/seed/code/form/link
+  take form link
+
+load @drumwork/seed/code/form/term
+  take form term
+
+load @drumwork/seed/code/form/task
+  take form task
+
+load @drumwork/seed/code/form/wear
+  take form wear
+
+load @drumwork/seed/code/form/flow
+  take form flow
+
+form form
+  link name, like term
+  link head, list link
+  link link, list link
+  link wear, list wear
+  link hook, list task
+  link task, list task
+  link flow, list flow

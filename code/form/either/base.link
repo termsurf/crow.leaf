@@ -1,0 +1,14 @@
+
+form either
+  note <Either/Or type>
+
+  head base, form form
+  head head, form form
+
+  case either-base, form either-take, loan base
+  case either-head, form either-take, loan head
+
+form either-take
+  head form
+
+  link bond, form loan form
