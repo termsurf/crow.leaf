@@ -1,0 +1,49 @@
+
+load @drumwork/seed/code/form/code
+  take form code
+
+load @drumwork/seed/code/form/size
+  take form size-32
+
+form head-size
+  like head-size-8
+  like head-size-16
+  like head-size-32
+  like head-size-64
+  like head-size-128
+  like head-size-2-32
+
+form head-size-8
+  like rank-head-size, size 8
+
+form head-size-16
+  like rank-head-size, size 16
+
+form head-size-32
+  like rank-head-size, size 32
+
+form head-size-64
+  like rank-head-size, size 64
+
+form head-size-128
+  like rank-head-size, size 128
+
+form head-size-2-32
+  note <BigUInt.>
+
+  like rank-head-size
+    size 0
+    loan head-size
+
+form rank-head-size
+  head base-size, like size-32
+  head head-size, like size-32
+  link code
+    list code
+      loan base-size
+      loan head-size
+
+host head-size
+  call exponentiate
+    size 2
+    size 32

@@ -1,0 +1,7 @@
+
+wear diff
+  note <Subtract>
+
+  task diff
+    link self, like self
+    link self, like self

@@ -1,6 +1,71 @@
 
-form tree-fork
-  note <Balanced binary tree data structure>
+form tree
+  note <B+tree with contiguous arrays of specific sizes.>
+  head fork, like like
 
-form tree-text
-  note <Trie>
+  link base, loan fork
+
+form tree-line
+  head fork, like like
+  head leaf, like like
+
+  like tree-line-2
+    loan fork
+    loan leaf
+  like tree-line-4
+    loan fork
+    loan leaf
+  like tree-line-8
+    loan fork
+    loan leaf
+  like tree-line-16
+    loan fork
+    loan leaf
+  like tree-line-32
+    loan fork
+    loan leaf
+
+form tree-line-2
+  head fork, like like
+  head leaf, like like
+
+  like line-2
+    like take
+      like fork, loan fork
+      like leaf, loan leaf
+
+form tree-line-4
+  head fork, like like
+  head leaf, like like
+
+  like line-4
+    like take
+      like fork, loan fork
+      like leaf, loan leaf
+
+form tree-line-8
+  head fork, like like
+  head leaf, like like
+
+  like line-8
+    like take
+      like fork, loan fork
+      like leaf, loan leaf
+
+form tree-line-16
+  head fork, like like
+  head leaf, like like
+
+  like line-16
+    like take
+      like fork, loan fork
+      like leaf, loan leaf
+
+form tree-line-32
+  head fork, like like
+  head leaf, like like
+
+  like line-32
+    like take
+      like fork, loan fork
+      like leaf, loan leaf

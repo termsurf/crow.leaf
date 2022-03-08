@@ -1,0 +1,20 @@
+
+form loom
+  note <Maybe type>
+
+  head base, like like
+
+  like boom, loan base
+  like bust
+
+form find
+  head base, form form
+
+form boom
+  note <Some type>
+
+  head like, like like
+  link bond, like loan like
+
+form bust
+  note <None type>

@@ -1,10 +1,5 @@
 
-load @drumwork/seed/code/form/term
-  take form term
-
-load @drumwork/seed/code/form/like
-  take form like
-
 form link
-  link name, form term
-  link like, form like
+  note <Pair/And type>
+  head base, form form
+  head head, form form

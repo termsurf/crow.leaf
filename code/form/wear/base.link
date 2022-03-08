@@ -1,0 +1,6 @@
+
+load @drumwork/seed/code/form/term
+  take form term
+
+form wear
+  link name, like term

@@ -11,14 +11,27 @@ load @drumwork/seed/code/form/task
 load @drumwork/seed/code/form/wear
   take form wear
 
+load @drumwork/seed/code/form/like
+  take form like
+
 load @drumwork/seed/code/form/flow
   take form flow
 
+wear form
+
 form form
+  wear form
+
   link name, like term
-  link head, list link
-  link link, list link
-  link wear, list wear
-  link hook, list task
-  link task, list task
+  link head, hash link, term name
+  link link, hash link, term name
+  link wear, hash wear, term name
+  link hook, hash task, term name
+  link task, hash task, term name
   link flow, list flow
+
+form like-form
+  wear form
+
+  like name, like term
+  like like, hash like, term name

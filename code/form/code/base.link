@@ -1,3 +1,12 @@
 
 form code
-  note <Literal value>
+
+form code-list # handled by compiler
+  link code
+
+wear boolean
+  note <Boolean type>
+
+form true, wear boolean
+
+form false, wear boolean

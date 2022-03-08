@@ -1,8 +1,0 @@
-
-load @drumwork/seed/code/form/flow
-  take wear flow
-
-form return
-  wear flow
-
-  link bond, form bond

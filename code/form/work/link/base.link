@@ -1,0 +1,10 @@
+
+load @drumwork/seed/code/form/term
+  take form term
+
+load @drumwork/seed/code/form/like
+  take form like
+
+form link
+  link name, like term
+  link like, like like

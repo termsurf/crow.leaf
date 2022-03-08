@@ -1,0 +1,19 @@
+
+form bill
+  note <Result type>
+
+  head rise-like, like like
+  head fall-like, like like
+
+  like rise, loan rise-like
+  like fall, loan fall-like
+
+form rise
+  head like, like like
+
+  base bond, like loan like
+
+form fall
+  head like, like like
+
+  base bond, like loan like

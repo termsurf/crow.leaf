@@ -1,0 +1,7 @@
+
+form side
+  note <Decidable type>
+  head base-like
+
+  case rise, loan base-like
+  case fall, loan fall loan base-like

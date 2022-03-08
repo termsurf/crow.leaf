@@ -1,7 +1,0 @@
-
-wear boolean
-  note <Boolean type>
-
-form true, wear boolean
-
-form false, wear boolean

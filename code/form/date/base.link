@@ -1,8 +1,11 @@
 
+load @drumwork/seed/code/form/size
+  take form size-8
+
 form date
-  link year, form natural-number
-  link month, form natural-number
-  link day, form natural-number
+  link year, form size-8
+  link month, form size-8
+  link day, form size-8
 
   hold is-between
     loan month

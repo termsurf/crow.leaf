@@ -1,13 +1,13 @@
 
-load ../text
+load @drumwork/seed/code/form/text
   take form text
 
-load ../term
+load @drumwork/seed/code/form/term
   take form term
 
 form deck
-  link mark, form text
+  link mark, like text
   link term, list term
-  link head, form text
-  link host, form text
-  link name, form text
+  link head, like text
+  link host, like text
+  link name, like text

@@ -1,14 +1,63 @@
 
+load @drumwork/seed/code/form/code
+  take form code
+
 form text
-  note <String type>
-  case void
-  case stem
+  like text-8
+  like text-16
+  like text-32
+  like text-64
+  like text-128
+  like text-2-32
 
-  link size, form size-rise
+form text-8
+  like size-text, size 8
 
-form stem
-  link base, form text-mark
-  link head, form text
+form text-16
+  like size-text, size 16
 
-form text-mark
-  form mark-rise-16
+form text-32
+  like size-text, size 32
+
+form text-64
+  like size-text, size 64
+
+form text-128
+  like size-text, size 128
+
+form text-256
+  like size-text, size 256
+
+form text-512
+  like size-text, size 512
+
+form text-1024
+  like size-text, size 1024
+
+form text-2048
+  like size-text, size 2048
+
+form text-4096
+  like size-text, size 4096
+
+form text-2-32
+  note <"Arbitrary" length string.>
+
+  link size-text
+    size 0
+    loan head-size
+
+form size-text
+  head base-size, like size-32
+  head head-size, like size-32
+    base loan base-size
+
+  link code
+    list code
+      loan base-size
+      loan head-size
+
+host head-size
+  call exponentiate
+    size 2
+    size 32

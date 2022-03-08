@@ -1,0 +1,6 @@
+
+wear twin
+  link twin
+    form task
+      link self, form self
+      bear self

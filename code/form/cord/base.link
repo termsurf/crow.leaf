@@ -1,0 +1,63 @@
+
+load @drumwork/seed/code/form/code
+  take form code
+
+form cord
+  like cord-8
+  like cord-16
+  like cord-32
+  like cord-64
+  like cord-128
+  like cord-2-32
+
+form cord-8
+  like size-cord, size 8
+
+form cord-16
+  like size-cord, size 16
+
+form cord-32
+  like size-cord, size 32
+
+form cord-64
+  like size-cord, size 64
+
+form cord-128
+  like size-cord, size 128
+
+form cord-256
+  like size-cord, size 256
+
+form cord-512
+  like size-cord, size 512
+
+form cord-1024
+  like size-cord, size 1024
+
+form cord-2048
+  like size-cord, size 2048
+
+form cord-4096
+  like size-cord, size 4096
+
+form cord-2-32
+  note <"Arbitrary" length string.>
+
+  link size-cord
+    size 0
+    loan head-size
+
+form size-cord
+  head base-size, like size-32
+  head head-size, like size-32
+    base loan base-size
+
+  link code
+    list code
+      loan base-size
+      loan head-size
+
+host head-size
+  call exponentiate
+    size 2
+    size 32
