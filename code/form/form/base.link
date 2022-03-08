@@ -19,15 +19,20 @@ load @drumwork/seed/code/form/like
 load @drumwork/seed/code/form/flow
   take form flow
 
-form form
+band form
   link name, like term
+  link band, mesh band, term name
   link head, mesh link, term name
+
+form base-form
+  band form
+
   link link, mesh link, term name
-  link wear, mesh wear, term name
   link hook, mesh task, term name
   link task, mesh task, term name
   link flow, list flow
 
 form like-form
-  like name, like term
+  band form
+
   like like, mesh like, term name
