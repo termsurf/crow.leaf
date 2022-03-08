@@ -1,8 +1,8 @@
 
-load @drumwork/seed/code/form/flow
-  take wear flow
+load @drumwork/seed/code/have/flow
+  take have flow
 
 form turn
-  wear flow
+  have flow
 
-  link bond, form bond
+  link bond, like cool

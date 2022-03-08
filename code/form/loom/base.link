@@ -1,14 +1,11 @@
 
 form loom
-  note <Maybe type>
+  note <Maybe/Option type>
 
-  head base, like like
+  head base-like, like like
 
-  like boom, loan base
-  like bust
-
-form find
-  head base, form form
+  case boom, loan base-like
+  case bust
 
 form boom
   note <Some type>

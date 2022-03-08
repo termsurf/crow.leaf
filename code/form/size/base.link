@@ -3,32 +3,32 @@ load @drumwork/seed/code/form/code
   take form code
 
 form size
-  like size-8
-  like size-16
-  like size-32
-  like size-64
-  like size-128
-  like size-2-32
+  case size-8
+  case size-16
+  case size-32
+  case size-64
+  case size-128
+  case size-2-32
 
 form size-8
-  like rank-size, size 8
+  case rank-size, size 8
 
 form size-16
-  like rank-size, size 16
+  case rank-size, size 16
 
 form size-32
-  like rank-size, size 32
+  case rank-size, size 32
 
 form size-64
-  like rank-size, size 64
+  case rank-size, size 64
 
 form size-128
-  like rank-size, size 128
+  case rank-size, size 128
 
 form size-2-32
   note <BigInt.>
 
-  like rank-size
+  case rank-size
     size 0
     loan head-size
 

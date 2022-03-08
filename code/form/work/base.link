@@ -1,9 +1,9 @@
 
-load ..
-  load /form
-    take form form
-  load /task
-    take form task
+load @drumwork/seed/code/form/form
+  take form form
+
+load @drumwork/seed/code/form/task
+  take form task
 
 form work
   case form

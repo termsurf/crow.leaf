@@ -1,4 +1,6 @@
 
+load @drumwork/seed/code/form/work
+
 load @drumwork/seed/code/form/link
   take form link
 

@@ -1,16 +1,20 @@
 
+load @drumwork/seed/code/form/code
+  take form code
+
+load @drumwork/seed/code/form/term
+  take form term
+
 form nest
+  link site
+    like list
+      like sink
+        like site
+        like nest
 
 form site
-
-form read
-
-form twin
-
-form move
-
-form loan
-
-form dive
-
-form knit
+  link term, like term
+  link dive, like code
+  link mesh, like code
+  link loan, like code
+  link twin, like code

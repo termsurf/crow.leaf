@@ -1,12 +1,15 @@
 
+load @drumwork/seed/code/form/cool
+  take form cool
+
 load @drumwork/seed/code/form/nest
   take form nest
 
-load @drumwork/seed/code/form/flow
-  take wear flow
+load @drumwork/seed/code/have/flow
+  take have flow
 
 form save
-  wear flow
+  have flow
 
   link base, like nest
-  link head, like bond
+  link head, like cool

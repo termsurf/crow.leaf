@@ -53,7 +53,7 @@ form line-2-32
     loan head-size
 
 form size-line
-  head site, like form
+  head site, like like
   head base-size, like size-32
   head head-size, like size-32
     base loan base-size
@@ -65,6 +65,6 @@ form size-line
       loan head-size
 
 host head-size
-  call exponentiate
+  call rise
     size 2
     size 32

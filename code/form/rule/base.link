@@ -1,11 +1,14 @@
 
-load ../test
+load @drumwork/seed/code/form/test
   take form test
-load ../link
+
+load @drumwork/seed/code/form/link
   take form link
-load ../toss
+
+load @drumwork/seed/code/form/toss
   take form toss
-load ../turn
+
+load @drumwork/seed/code/form/turn
   take form turn
 
 form rule

@@ -5,8 +5,8 @@ form bill
   head rise-like, like like
   head fall-like, like like
 
-  like rise, loan rise-like
-  like fall, loan fall-like
+  case rise, loan rise-like
+  case fall, loan fall-like
 
 form rise
   head like, like like

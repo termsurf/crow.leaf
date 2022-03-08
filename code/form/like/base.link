@@ -5,11 +5,14 @@ load @drumwork/seed/code/form/bind
 load @drumwork/seed/code/form/link
   take form link
 
+load @drumwork/seed/code/form/term
+  take form term
+
 form like
-  link name
+  link name, like term
   link bind, list bind
 
 form task-like
   link head, list link
-  link link, hash link, term name
+  link link, mesh link, term name
   link bear, like like
