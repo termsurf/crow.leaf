@@ -5,7 +5,7 @@ form host
   link term, like term
   link head, like text
   link read, like text
-  link deck, hash deck, term name
+  link deck, mesh deck, term name
   link link, list face-link
     slot host
   link face, list face

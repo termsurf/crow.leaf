@@ -1,12 +1,8 @@
 
 form code
+  like take
+  like free
 
-form code-list # handled by compiler
-  link code
+form take
 
-wear boolean
-  note <Boolean type>
-
-form true, wear boolean
-
-form false, wear boolean
+form free

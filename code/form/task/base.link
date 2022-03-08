@@ -10,7 +10,7 @@ load @drumwork/seed/code/form/link
 
 form task
   link name, form term
-  link head, hash link, term name
-  link link, hash link, term name
-  link task, hash task, term name
+  link head, mesh link, term name
+  link link, mesh link, term name
+  link task, mesh task, term name
   link flow, list flow
