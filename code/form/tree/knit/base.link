@@ -9,7 +9,7 @@ load @drumwork/seed/code/form/size
 load @drumwork/seed/code/form/text
   take form text
 
-form hash
+form knit
   head leaf, like like
 
   like tree

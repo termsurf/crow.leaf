@@ -1,6 +1,6 @@
 
-load ../number
-  take form integer-32
+load ../size
+  take form size-32
 
 load ../term
   take form term
@@ -9,9 +9,9 @@ form feed
   link read, list feed-read
   link rule, form feed-rule
   link sort, list feed-sort
-  link size, form integer-32
+  link size, form size-32
     base size 20
-  link base, form integer-32
+  link base, form size-32
     base size 0
     note <Offset>
 
