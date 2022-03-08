@@ -1,6 +1,9 @@
 
+load @drumwork/seed/code/band/flow
+  take band flow
+
 form test
-  have flow
+  band flow
 
   link task, like task
   link take
@@ -8,3 +11,4 @@ form test
     like test
   link free
     like task
+      head

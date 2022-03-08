@@ -1,5 +1,6 @@
 
-load @drumwork/seed/code/form/work
+load @drumwork/seed/code/band/work
+  take band work
 
 load @drumwork/seed/code/form/link
   take form link
@@ -10,8 +11,8 @@ load @drumwork/seed/code/form/term
 load @drumwork/seed/code/form/task
   take form task
 
-load @drumwork/seed/code/form/wear
-  take form wear
+load @drumwork/seed/code/form/band
+  take form band
 
 load @drumwork/seed/code/form/like
   take form like
@@ -20,6 +21,8 @@ load @drumwork/seed/code/form/flow
   take form flow
 
 band form
+  band work
+
   link name, like term
   link band, mesh band, term name
   link head, mesh link, term name
@@ -32,7 +35,12 @@ form base-form
   link task, mesh task, term name
   link flow, list flow
 
+form case-form
+  band form
+
+  link case, mesh like, term name
+
 form like-form
   band form
 
-  like like, mesh like, term name
+  link like, mesh like, term name

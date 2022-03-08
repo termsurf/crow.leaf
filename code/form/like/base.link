@@ -8,11 +8,17 @@ load @drumwork/seed/code/form/link
 load @drumwork/seed/code/form/term
   take form term
 
-form like
+band like
+
+form base-like
+  band like
+
   link name, like term
   link bind, list bind
 
 form task-like
+  band like
+
   link head, list link
   link link, mesh link, term name
   link bear, like like

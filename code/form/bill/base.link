@@ -9,11 +9,15 @@ form bill
   case fall, loan fall-like
 
 form rise
+  note <Ok type>
+
   head like, like like
 
-  base bond, like loan like
+  link bond, like loan like
 
 form fall
+  note <Error type>
+
   head like, like like
 
-  base bond, like loan like
+  link bond, like loan like
