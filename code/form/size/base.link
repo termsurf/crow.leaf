@@ -1,50 +1,47 @@
 
-load @drumwork/seed/code/form/code
-  take form code
+load @drumwork/seed/code/dock/form/size
+  take form size-slab
 
 form size
+  like size-base
+  like size-list
+
+form size-base
   like size-8
   like size-16
   like size-32
   like size-64
   like size-128
-  like size-2-32
+  like size-256
+  like size-512
 
 form size-8
-  like rank-size, size 8
+  like size-slab, size 8
 
 form size-16
-  like rank-size, size 16
+  like size-slab, size 16
 
 form size-32
-  like rank-size, size 32
+  like size-slab, size 32
 
 form size-64
-  like rank-size, size 64
+  like size-slab, size 64
 
 form size-128
-  like rank-size, size 128
+  like size-slab, size 128
 
-form size-2-32
-  note <BigInt.>
+form size-256
+  like size-slab, size 256
 
-  like rank-size
-    size 0
-    loan head-size
+form size-512
+  like size-slab, size 512
 
-form rank-size
-  head base-size, like size-32
-  head head-size, like size-32
+form size-list
+  note <Extremely big integer.>
 
-  link base, like code
-    base free
-
-  link code
-    list code
-      loan base-size
-      loan head-size
+  link slab, list size-base
 
 host head-size
-  call exponentiate
+  call rise
     size 2
     size 32

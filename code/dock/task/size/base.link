@@ -1,0 +1,18 @@
+
+task mate
+  note <Multiply>
+
+task diff
+  note <Subtract>
+
+task fork
+  note <Divide>
+
+task fuse
+  note <Add>
+
+task rise
+  note <Exponentiate>
+
+task fall
+  note <Logarithm>

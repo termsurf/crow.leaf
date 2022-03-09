@@ -1,70 +1,59 @@
 
-load @drumwork/seed/code/form/code
-  take form code
+load @drumwork/seed/code/dock/form/line
+  take form line
+    save form line-slab
 
 form line
-  like line-2
-  like line-4
+  like line-base
+  like line-flow
+
+form line-base
   like line-8
   like line-16
   like line-32
-  like line-2-32
+  like line-64
+  like line-128
+  like line-256
+  like line-512
+
+form line-1
+  head site, like like
+
+  like line-slab
+    loan site
+    size 2
 
 form line-2
   head site, like like
 
-  like size-line
+  like line-slab
     loan site
     size 2
 
 form line-4
   head site, like like
 
-  like size-line
+  like line-slab
     loan site
     size 4
 
 form line-8
   head site, like like
 
-  like size-line
+  like line-slab
     loan site
     size 8
 
 form line-16
   head site, like like
 
-  like size-line
+  like line-slab
     loan site
     size 16
 
 form line-32
   head site, like like
 
-  like size-line
+  like line-slab
     loan site
-    size 32
-
-form line-2-32
-  note <"Arbitrary" length array.>
-
-  link size-line
-    size 0
-    loan head-size
-
-form size-line
-  head site, like like
-  head base-size, like size-32
-  head head-size, like size-32
-    base loan base-size
-
-  link site # specially handled by the compiler
-    like code-list
-      loan site
-      loan base-size
-      loan head-size
-
-host head-size
-  call rise
-    size 2
     size 32
