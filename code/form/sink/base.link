@@ -5,5 +5,5 @@ form sink
   head base-like, like like
   head head-like, like like
 
-  link base, like loan base-like
-  link head, like loan head-like
+  take base, like base-like
+  take head, like head-like

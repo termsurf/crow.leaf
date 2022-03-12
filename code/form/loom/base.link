@@ -4,14 +4,15 @@ form loom
 
   head base-like, like like
 
-  case boom, loan base-like
+  case boom, like base-like
   case bust
 
 form boom
   note <Some type>
 
-  head like, like like
-  link bond, like loan like
+  head seat, like like
+
+  link bond, like seat
 
 form bust
   note <None type>

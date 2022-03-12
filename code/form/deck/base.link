@@ -6,8 +6,9 @@ load @drumwork/seed/code/form/term
   take form term
 
 form deck
-  link mark, like text
-  link term, list term
-  link head, like text
-  link host, like text
-  link name, like text
+  take mark, like text
+  take term, list term
+  take head, like text
+  take host, like text
+  take mate, list mate
+  take name, like text

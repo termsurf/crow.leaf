@@ -1,10 +1,10 @@
 
 load @drumwork/seed/code/form/form
-  take form form
+  find form form
 
 load @drumwork/seed/code/form/size
-  take form head-size-32
-  take host head-size
+  find form head-size-32
+  find host head-size
 
 form list
   note <Linked List.>
@@ -14,22 +14,22 @@ form list
   head head-size, like head-size-32
     base loan head-size
 
-  link base-size, like head-size-32
+  take base-size, like head-size-32
     base loan base-size
-  link head-size, like head-size-32
+  take head-size, like head-size-32
     base loan head-size
-  link size, like head-size-32
+  take size, like head-size-32
     lock free
     base size 0
-  link base, like site, loan site
+  take base, like site, loan site
     lock free
     void take
-  link head, like site, loan site
+  take head, like site, loan site
     lock free
     void take
 
   hook test
-    link self
+    take self
 
     hold test-mean
       loan self/size
@@ -39,7 +39,7 @@ form list
 form site
   head like, like form
 
-  link base, loan like
+  take base, loan like
     void take
-  link head, loan like
+  take head, loan like
     void take

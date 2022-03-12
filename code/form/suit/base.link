@@ -1,6 +1,6 @@
 
 load @drumwork/seed/code/form/term
-  take form term
+  find form term
 
 form suit
-  link name, like term
+  take name, like term

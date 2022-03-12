@@ -1,13 +1,13 @@
 
 load @drumwork/seed/code/form/tree
-  take form tree
-  take form tree-line
+  find form tree
+  find form tree-line
 
 load @drumwork/seed/code/form/size
-  take form head-size-8
+  find form head-size-8
 
 load @drumwork/seed/code/form/text
-  take form text
+  find form text
 
 form knit
   head leaf, like like
@@ -19,26 +19,26 @@ form knit
 form fork
   head leaf, like like
 
-  link size, like head-size-8
+  take size, like head-size-8
     note <Children count.>
     base 0
-  link mark, like text
+  take mark, like text
     void take
-  link line
+  take line
     like tree-line
       like fork, loan leaf
       like leaf, loan leaf
-  link base
+  take base
     like fork, loan leaf
-  link base-fork
+  take base-fork
     like fork, loan leaf
     void take
-  link head-fork
+  take head-fork
     like fork, loan leaf
     void take
 
 form leaf
   head like, like like
 
-  link mark, like text
-  link bond, loan like
+  take mark, like text
+  take bond, loan like

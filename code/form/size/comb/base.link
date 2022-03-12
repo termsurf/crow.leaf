@@ -1,6 +1,6 @@
 
 load @drumwork/seed/code/dock/form/size/comb
-  take form size-comb-slab
+  find form size-comb-slab
 
 form size-comb
   like size-comb-base
@@ -31,7 +31,7 @@ form size-comb-512
 form size-comb-list
   note <BigNumber.>
 
-  link slab, list size-comb-base
+  take slab, list size-comb-base
 
 host head-size
   call rise

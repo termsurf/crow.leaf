@@ -1,15 +1,15 @@
 
 load @drumwork/seed/code/form/test
-  take form test
+  find form test
 
 load @drumwork/seed/code/form/link
-  take form link
+  find form link
 
 load @drumwork/seed/code/form/toss
-  take form toss
+  find form toss
 
 load @drumwork/seed/code/form/turn
-  take form turn
+  find form turn
 
 form rule
   case test

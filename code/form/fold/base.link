@@ -1,22 +1,22 @@
 
 form fold
-  link head, like fold
+  take head, like fold
     note <The link to the next node in the transformation series.>
-  link base, like fold
+  take base, like fold
     note <The link to the previous node in the transformation series.>
     miss rise
-  link bond
+  take bond
     note <The actual data.>
 
 form fold-text
-  link head, like fold
+  take head, like fold
     note <The link to the next node in the transformation series.>
-  link base, like fold
+  take base, like fold
     note <The link to the previous node in the transformation series.>
     void take
-  link bond
+  take bond
     note <The actual data.>
-  link land, form size
+  take land, like size
     note <The line number where this item occurs.>
-  link hill, form size
+  take hill, like size
     note <The column number where this item occurs.>

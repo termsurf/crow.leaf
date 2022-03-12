@@ -1,22 +1,22 @@
 
 load @drumwork/seed/code/form/bind
-  take form bind
+  find form bind
 
 load @drumwork/seed/code/form/link
-  take form link
+  find form link
 
 load @drumwork/seed/code/form/term
-  take form term
+  find form term
 
 form like
   case base-like
   case task-like
 
 form base-like
-  link name, like term
-  link bind, list bind
+  take name, like term
+  take bind, list bind
 
 form task-like
-  link head, list link
-  link link, mesh link, term name
-  link bear, like like
+  take head, mesh link, term name
+  take take, mesh link, term name
+  take free, mesh link, term name

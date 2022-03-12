@@ -1,6 +1,6 @@
 
 load @drumwork/seed/code/dock/form/size/head
-  take form size-head-slab
+  find form size-head-slab
 
 form size-head
   like size-head-base
@@ -39,7 +39,7 @@ form size-head-512
 form size-head-list
   note <BigUInt.>
 
-  link slab, list size-head-base
+  take slab, list size-head-base
 
 host size-head
   call rise

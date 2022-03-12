@@ -6,5 +6,5 @@ load @drumwork/seed/code/form/cool
   take form cool
 
 form bind
-  link term, like term
-  link bond, like cool
+  take term, like term
+  take bond, like cool

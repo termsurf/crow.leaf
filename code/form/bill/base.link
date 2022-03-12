@@ -5,19 +5,19 @@ form bill
   head rise-like, like like
   head fall-like, like like
 
-  case rise, loan rise-like
-  case fall, loan fall-like
+  case rise, like rise-like
+  case fall, like fall-like
 
 form rise
   note <Ok type>
 
   head like, like like
 
-  link bond, like loan like
+  take bond, like like
 
 form fall
   note <Error type>
 
   head like, like like
 
-  link bond, like loan like
+  take bond, like like

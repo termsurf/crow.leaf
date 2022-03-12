@@ -6,15 +6,15 @@ load @drumwork/seed/code/form/term
   take form term
 
 form nest
-  link site
+  take site
     like list
       like sink
         like site
         like nest
 
 form site
-  link term, like term
-  link dive, like code
-  link mesh, like code
-  link loan, like code
-  link twin, like code
+  take term, like term
+  take dive, like code
+  take mesh, like code
+  take loan, like code
+  take twin, like code

@@ -1,46 +1,56 @@
 
 load @drumwork/seed/code/band/work
-  take band work
+  find band work
 
 load @drumwork/seed/code/form/link
-  take form link
+  find form link
 
 load @drumwork/seed/code/form/term
-  take form term
+  find form term
 
 load @drumwork/seed/code/form/task
-  take form task
+  find form task
 
 load @drumwork/seed/code/form/band
-  take form band
+  find form band
 
 load @drumwork/seed/code/form/like
-  take form like
+  find form like
 
 load @drumwork/seed/code/form/flow
-  take form flow
+  find form flow
 
 suit form
   suit work
 
-  link name, like term
-  link suit, mesh suit, term name
-  link head, mesh link, term name
+  take name, like term
+  take head, mesh link, term name
 
-form base-form
+form form-base
   suit form
 
-  link link, mesh link, term name
-  link hook, mesh task, term name
-  link task, mesh task, term name
-  link flow, list flow
+  take suit, mesh suit, term name
+  take link, mesh link, term name
+  take hook, mesh task, term name
+  take task, mesh task, term name
+  take flow, list flow
 
-form case-form
+form form-case
   suit form
 
-  link case, mesh like, term name
+  take case, mesh like, term name
 
-form like-form
+form form-like
   suit form
 
-  link like, mesh like, term name
+  take like, mesh like, term name
+
+suit form
+  suit twin
+    task test-twin
+      take self, like self
+      take twin, like self
+
+      test test-twin-base
+        loan self/@/mark
+        loan twin/@/mark

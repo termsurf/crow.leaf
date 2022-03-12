@@ -1,25 +1,25 @@
 
 load @drumwork/seed/code/form/bind
-  take form bind
+  find form bind
 
 load @drumwork/seed/code/form/task
-  take form task
+  find form task
 
 load @drumwork/seed/code/form/hook
-  take form hook
+  find form hook
 
 load @drumwork/seed/code/form/link
-  take form link
+  find form link
 
 load @drumwork/seed/code/band/flow
-  take band flow
+  find band flow
 
 form call
   band flow
 
-  link task, like task
-  link head, list link
-  link bind, list bind
-  link hook
+  take task, like task
+  take head, list link
+  take bind, list bind
+  take hook
     mesh hook, term name
-      like loan like
+      like task

@@ -1,28 +1,28 @@
 
 load @drumwork/seed/code/form/size
-  take form size-32
+  find form size-32
 
 load @drumwork/seed/code/form/term
-  take form term
+  find form term
 
 form feed
-  link read, list feed-read
-  link rule, like feed-rule
-  link sort, list feed-sort
-  link size, like size-32
+  take read, list feed-read
+  take rule, like feed-rule
+  take sort, list feed-sort
+  take size, like size-32
     base size 20
-  link base, like size-32
+  take base, like size-32
     base size 0
     note <Offset>
 
 form feed-read
   note <Tree of selections to make>
-  link term, like term
-  link link, list feed-read
+  take term, like term
+  take link, list feed-read
 
 form feed-sort
-  link term
-  link fall, loan rise
+  take term
+  take fall, loan rise
 
 form feed-rule
   case feed-test
@@ -35,8 +35,8 @@ form feed-test-head
   case bond
 
 form feed-test
-  link base, like feed-nest
-  link head, like feed-test-head
+  take base, like feed-nest
+  take head, like feed-test-head
 
 form feed-test-like, base feed-test
 form feed-test-rise, base feed-test

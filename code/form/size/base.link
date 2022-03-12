@@ -1,6 +1,6 @@
 
 load @drumwork/seed/code/dock/form/size
-  take form size-slab
+  find form size-slab
 
 form size
   like size-base
@@ -39,7 +39,7 @@ form size-512
 form size-list
   note <Extremely big integer.>
 
-  link slab, list size-base
+  take slab, list size-base
 
 host head-size
   call rise

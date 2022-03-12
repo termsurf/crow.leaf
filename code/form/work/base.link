@@ -1,9 +1,9 @@
 
 load @drumwork/seed/code/form/form
-  take form form
+  find form form
 
 load @drumwork/seed/code/form/task
-  take form task
+  find form task
 
 form work
   case form

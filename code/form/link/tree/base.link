@@ -6,10 +6,10 @@ load ../..
     take form term
 
 form link
-  link term, form term
-  link link
-    form list
-      bind seat, form link
-      bind seat, form link-text
+  take term, form term
+  take link
+    like list
+      like link
+      like link-text
 
 form link-text

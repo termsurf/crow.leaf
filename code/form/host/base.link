@@ -1,15 +1,15 @@
 
 form host
-  link mark, like text
-  link name, like text
-  link term, like term
-  link head, like text
-  link read, like text
-  link deck, mesh deck, term name
-  link link, list face-link
+  take mark, like text
+  take name, like text
+  take term, like term
+  take head, like text
+  take read, like text
+  take deck, mesh deck, term name
+  take link, list face-link
     slot host
-  link face, list face
-    link link
-    slot face
-  link cite, list cite
-  link site, like site
+  take face, list face
+    turn link
+    link face
+  take cite, list cite
+  take site, like site

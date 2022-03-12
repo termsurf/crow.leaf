@@ -1,6 +1,6 @@
 
 load @drumwork/seed/code/form/code
-  take form slab
+  find form slab
 
 form text
   like text-8
@@ -43,7 +43,7 @@ form text-4096
 form text-2-32
   note <"Arbitrary" length string.>
 
-  link size-text
+  like size-text
     size 0
     loan head-size
 
@@ -52,9 +52,10 @@ form size-text
   head head-size, like size-32
     base loan base-size
 
-  link slab, like slab
-    loan base-size
-    loan head-size
+  take slab
+    like slab
+      loan base-size
+      loan head-size
 
 host head-size
   call exponentiate
