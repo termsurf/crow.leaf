@@ -7,9 +7,13 @@
 <br/>
 <br/>
 
+<p align='center'>
+  <img src='https://github.com/drumworkteam/seed/blob/make/view/view.svg?raw=true' height='312'>
+</p>
+
 <h3 align='center'>seed</h3>
 <p align='center'>
-  Link Text Standard Library Interface
+  Link Text Standard Library Specification
 </p>
 
 <br/>
@@ -18,7 +22,7 @@
 
 ### Welcome
 
-The `bind` library is one possible implementation of this interface. The goal of separating `seed` from `bind` is so that one could theoretically develop an optimal version of the implementation in parallel to a basic implementation, then swap them out, without interferring with the main library interface. This `seed` library is basically the specification for the standard library. It could also be used in other programming languages as it doesn't have any implementation.
+The `wolf` library is one possible implementation of this interface. The goal of separating `seed` from `wolf` is so that one could theoretically develop an optimal version of the implementation in parallel to a basic implementation, then swap them out, without interferring with the main library interface. This `seed` library is basically the specification for the standard library. It could also be used in other programming languages as it doesn't have any implementation.
 
 ### License
 

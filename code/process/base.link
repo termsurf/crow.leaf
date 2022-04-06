@@ -1,0 +1,99 @@
+
+form process
+  note <Cross platform representation of a pid_t.>
+
+form resource-usage-information
+  take user-cpu-time-used, like time
+    note <user CPU time used>
+  take system-cpu-time-used, like time
+    note <system CPU time used>
+  take maxrss, like unsigned-integer-64
+    note <maximum resident set size>
+  take integral-shared-memory-size, like unsigned-integer-64
+    note <integral shared memory size (X)>
+  take integral-unshared-data-size, like unsigned-integer-64
+    note <integral unshared data size (X)>
+  take integral-unshared-stack-size, like unsigned-integer-64
+    note <integral unshared stack size (X)>
+  take page-reclaims, like unsigned-integer-64
+    note <page reclaims (soft page faults) (X)>
+  take page-faults, like unsigned-integer-64
+    note <page faults (hard page faults)>
+  take number-of-swaps, like unsigned-integer-64
+    note <swaps (X)>
+  take inblock, like unsigned-integer-64
+    note <block input operations>
+  take oublock, like unsigned-integer-64
+    note <block output operations>
+  take ipc-messages-sent, like unsigned-integer-64
+    note <IPC messages sent (X)>
+  take msgrcv, like unsigned-integer-64
+    note <IPC messages received (X)>
+  take nsignals, like unsigned-integer-64
+    note <signals received (X)>
+  take nvcsw, like unsigned-integer-64
+    note <voluntary context switches (X)>
+  take nivcsw, like unsigned-integer-64
+    note <involuntary context switches (X)>
+
+form cpu-time-set
+  take user, like unsigned-integer-64
+    note <milliseconds>
+  take nice, like unsigned-integer-64
+    note <milliseconds>
+  take sys, like unsigned-integer-64
+    note <milliseconds>
+  take idle, like unsigned-integer-64
+    note <milliseconds>
+  take irq, like unsigned-integer-64
+    note <milliseconds>
+
+form cpu-information
+  take model, like string;
+  take speed, like unsigned-integer;
+  take cpu-time-set, like cpu-time-set
+
+# http://docs.libuv.org/en/v1.x/misc.html#c.uv_file
+
+# uv_setup_args
+task save-input
+  take input
+
+task get-title
+
+task set-title
+
+task get-resident-set-size
+  note <Gets the resident set size (RSS) for the current process.>
+
+task get-uptime
+  note <Gets the current system uptime. Depending on the system full or fractional seconds are returned.>
+
+task get-resource-usage
+  note <Gets the resource usage measures for the current process.>
+
+task get-id
+  note <Returns the current process ID.>
+
+task get-parent-id
+  note <Returns the parent process ID.>
+
+task get-available-parallelism
+  note <Returns an estimate of the default amount of parallelism a program should use. Always returns a non-zero value.>
+
+task get-cpu-info
+  note <Gets information about the CPUs on the system.>
+
+task free-cpu-info-array
+  note <Frees the cpu_infos array previously allocated with get-cpu-info.>
+
+task get-interface-address-list
+  note <Gets address information about the network interfaces on the system.>
+
+task get-executable-path
+
+task get-current-working-directory
+
+task change-working-directory
+
+task sleep

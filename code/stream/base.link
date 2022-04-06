@@ -1,0 +1,20 @@
+
+form stream
+  note <Stream handles provide an abstraction of a duplex communication channel.>
+
+  task listen
+  task accept
+  task start-reading
+  task stop-reading
+  task write
+  task write-over-pipe
+  task try-write
+  task try-write-over-pipe
+  task is-readable
+  task is-writable
+  task set-is-in-blocking-mode
+  task get-write-queue-size
+
+# http://docs.libuv.org/en/v1.x/api.html
+
+# https://github.com/rayon-rs/rayon

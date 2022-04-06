@@ -1,4 +1,10 @@
 
+form file
+  note <Cross platform representation of a file handle.>
+
+form descriptor
+  note <Abstract representation of a file descriptor. On Unix systems this is a typedef of int and on Windows a HANDLE.>
+
 host can-read-flag, size #b1
 host can-write-flag, size #b10
 host can-create-flag, size #b100

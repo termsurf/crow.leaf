@@ -1,0 +1,6 @@
+
+# https://github.com/briansmith/ring
+
+form hash
+  task update
+  task digest
