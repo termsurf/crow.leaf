@@ -1,4 +1,0 @@
-
-have void
-  task test-void
-    like task

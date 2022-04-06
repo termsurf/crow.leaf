@@ -1,9 +1,0 @@
-
-form sink
-  note <Or type>
-
-  head base-like, like like
-  head head-like, like like
-
-  take base, like base-like
-  take head, like head-like

@@ -9,16 +9,20 @@
 
 <h3 align='center'>seed</h3>
 <p align='center'>
-  Link Text Base Model
+  Link Text Standard Library Interface
 </p>
 
 <br/>
 <br/>
 <br/>
 
+### Welcome
+
+The `bind` library is one possible implementation of this interface. The goal of separating `seed` from `bind` is so that one could theoretically develop an optimal version of the implementation in parallel to a basic implementation, then swap them out, without interferring with the main library interface. This `seed` library is basically the specification for the standard library. It could also be used in other programming languages as it doesn't have any implementation.
+
 ### License
 
-Copyright 2021-2022 <a href='https://drum.work'>DrumWork</a>
+Copyright 2022 <a href='https://drum.work'>DrumWork</a>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

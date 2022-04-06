@@ -1,8 +1,0 @@
-
-load @drumwork/seed/code/form/size
-  take form size-32
-
-form zone
-  note <Pointer>
-  link slot, like size-32
-  link bond

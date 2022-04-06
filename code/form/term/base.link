@@ -1,6 +1,0 @@
-
-load @drumwork/seed/code/form/text
-  find form text
-
-form term
-  take text, like text
