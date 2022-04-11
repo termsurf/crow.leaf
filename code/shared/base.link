@@ -1,0 +1,13 @@
+
+tree define-each
+  take list
+  take tree-name
+
+  hook bind
+    slot file
+    walk list, loan list
+      hook step
+        take item
+        beam file
+          fuse loan tree-name
+            loan item

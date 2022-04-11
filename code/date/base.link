@@ -1,2 +1,42 @@
 
+load @drumwork/seed/code/shared
+  take tree define-each
+
 # https://github.com/chronotope/chrono
+# https://moment.github.io/luxon/api-docs/index.html
+
+host interval
+  term year
+  term month
+  term week
+  term day
+  term hour
+  term minute
+  term second
+  term millisecond
+  term microsecond
+
+form date
+  fuse define-each, loan interval
+    loan define-interval
+
+tree define-interval
+  take name
+
+  hook bind
+    task get-{name}
+      free result, like unsigned-integer-32
+
+    task set-{name}
+      take value, like unsigned-integer-32
+
+    task add-{name}s
+      take value, like unsigned-integer-32
+
+    task remove-{name}s
+      take value, like unsigned-integer-32
+
+    task get-end-of-{name}
+      free result, like unsigned-integer-32
+
+    task set-end-of-{name}

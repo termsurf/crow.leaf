@@ -90,10 +90,18 @@ task free-cpu-info-array
 task get-interface-address-list
   note <Gets address information about the network interfaces on the system.>
 
-task get-executable-path
+task get-runnable-path
 
 task get-current-working-directory
 
 task change-working-directory
 
 task sleep
+
+task spawn
+
+task run-command
+
+task run-file
+
+task fork

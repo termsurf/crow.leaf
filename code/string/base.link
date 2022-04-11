@@ -1,4 +1,7 @@
 
+# todo: find search abstractions
+# https://vocajs.com/
+
 form text
   task replace-pattern
     take pattern, like text
@@ -50,3 +53,30 @@ form text
   task add-32-bit-symbol-at-start
 
   task add-32-bit-symbol-at-end
+
+  task convert-to-camel-case
+  task convert-to-capital-case
+  task convert-to-kebab-case
+  task convert-to-lower-case
+  task convert-to-snake-case
+  task convert-to-swap-case
+  task convert-to-title-case
+  task convert-to-upper-case
+  task get-grapheme-at
+  task get-unicode-point-at
+  task get-byte-at
+  task truncate-at-word-boundary
+  task slice
+  task get-substring
+  task truncate
+  task count-bytes
+  task count-graphemes
+  task count-substrings
+  task count-words
+  task escape-html
+  task escape-regexp
+  task unescape-html
+  task unescape-regexp
+  task search
+
+  task sanitize-html

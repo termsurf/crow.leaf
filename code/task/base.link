@@ -1,0 +1,11 @@
+
+task throttle
+task debounce
+task bind
+task memoize
+task curry
+task defer
+task delay
+task call-once
+task spread
+task wrap
