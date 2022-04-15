@@ -2,6 +2,7 @@
 task make-with-capacity
 
 form list
+  note <A growable, non-contiguous set of memory chunks divided into elements.>
   head item-type, like like
 
   task add-to-start

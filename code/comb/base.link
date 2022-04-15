@@ -1,0 +1,26 @@
+
+host infinity, term infinity
+host negative-infinity, term negative-infinity
+
+tree comb
+  hook bind
+    task round-up # ceil
+    task round-down # floor
+    task round
+    task truncate-start # return fractional part
+    task truncate-end # return integer part
+    task get-sign-as-number
+
+    task square-root
+    task compute-sine # sine
+    task compute-cosine # cosine
+    task compute-tangent # tangent
+    task compute-inverse-sine
+    task compute-inverse-cosine
+    task compute-inverse-tangent
+    task compute-hyperbolic-sine
+    task compute-hyperbolic-cosine
+    task compute-hyperbolic-tangent
+    task compute-inverse-hyperbolic-sine
+    task compute-inverse-hyperbolic-cosine
+    task compute-inverse-hyperbolic-tangent
