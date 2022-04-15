@@ -1,0 +1,13 @@
+
+wear look
+  head like, form like
+
+  link test-look
+    form task
+      link self, form self
+      link like, loan like
+      bear boolean
+
+  # default to false
+  task test-look
+    loan free

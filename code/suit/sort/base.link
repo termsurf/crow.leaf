@@ -1,0 +1,13 @@
+
+wear sort
+  task test-base
+    like task
+      link self, like self
+      link bulb, like self
+      bear care
+
+  task test-head
+    like task
+      link self, like self
+      link bulb, like self
+      bear care

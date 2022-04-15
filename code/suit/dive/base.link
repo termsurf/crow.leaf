@@ -1,0 +1,10 @@
+
+wear dive
+  note <Immutable deref>
+
+  task dive
+
+wear dive-hack
+  note <Mutable deref>
+
+  task dive

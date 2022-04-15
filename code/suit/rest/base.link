@@ -1,0 +1,8 @@
+
+wear rest
+  note <Remainder math (modulo)>
+
+  task rest
+    link self, form self
+    link leaf, form self
+    bear self
