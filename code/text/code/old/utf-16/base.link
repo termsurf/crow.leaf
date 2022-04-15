@@ -1,7 +1,0 @@
-
-load @drumwork/seed/code/string
-  take tree string
-
-form string-utf-16
-  fuse string
-    like unsigned-integer-16

@@ -1,7 +1,0 @@
-
-load @drumwork/seed/code/string
-  take tree string
-
-form string-utf-32
-  fuse string
-    like unsigned-integer-32
