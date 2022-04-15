@@ -2,81 +2,74 @@
 note <https://github.com/apple/swift/blob/main/docs/StringDesign.rst>
 note <The Characters enumerated when simply looping over elements of a Swift string are extended grapheme clusters as determined by Unicode's Default Grapheme Cluster Boundary Specification.>
 
-form text
-  task replace
-    take pattern, like text
-    take replacement, like task
-    free seed, like self
+tree string
+  take point-type, like like
 
-  task replace
-    take pattern, like regular-expression
-    take replacement, like task
-    free seed, like self
+  hook bind
+    task convert-to-camel-case
+    task convert-to-capital-case
+    task convert-to-kebab-case
+    task convert-to-lower-case
+    task convert-to-snake-case
+    task convert-to-swap-case
+    task convert-to-title-case
+    task convert-to-upper-case
 
-  task get-leftmost-position
-    take pattern, like text
-    free seed, like size
+    task replace
+      take pattern, like string, like point-type
+      take replacement, like task
+      free seed, like self
 
-  task get-leftmost-position
-    take pattern, like regular-expression
-    free seed, like size
+    task replace
+      take pattern, like regular-expression
+      take replacement, like task
+      free seed, like self
 
-  task get-rightmost-position
-    take pattern, like text
-    free seed, like size
+    task get-leftmost-position
+      take pattern, like text
+      free seed, like size
 
-  task get-rightmost-position
-    take pattern, like regular-expression
-    free seed, like size
+    task get-leftmost-position
+      take pattern, like regular-expression
+      free seed, like size
 
-  task get-human-symbol-at
+    task get-rightmost-position
+      take pattern, like text
+      free seed, like size
 
-  task get-utf-8-point-at-position
+    task get-rightmost-position
+      take pattern, like regular-expression
+      free seed, like size
 
-  task get-utf-16-point-at-position
+    task get-point-at-position
 
-  task get-utf-32-point-at-position
+    task set-point-at-position
 
-  task set-utf-8-point-at-position
+    task remove-point-at-position
 
-  task set-utf-16-point-at-position
+    task split
+      free seed
+        like list
+          like text
 
-  task set-utf-32-point-at-position
+    task add-point-at-start
 
-  task remove-utf-8-point-at-position
+    task add-point-at-end
 
-  task remove-utf-16-point-at-position
+    task remove-point-from-start
 
-  task remove-utf-32-point-at-position
+    task remove-point-from-end
 
-  task split
-    free seed
-      like list
-        like text
+    task truncate-at-whitespace-boundary
 
-  task add-utf-8-point-at-start
+    task make-iterator
 
-  task add-utf-8-point-at-end
-
-  task add-utf-16-point-at-start
-
-  task add-utf-16-point-at-end
-
-  task add-utf-32-point-at-start
-
-  task add-utf-32-point-at-end
-
-  task truncate-at-word-boundary
-  task slice
-  task get-substring
-  task truncate
-  task count-bytes
-  task count-graphemes
-  task count-substrings
-  task count-words
-  task search
-  task trim-left
-  task trim-right
-  task trim
-  task pad-left
-  task pad-right
+    task slice
+    task get-substring
+    task truncate
+    task count-substrings
+    task trim-left
+    task trim-right
+    task trim
+    task pad-left
+    task pad-right

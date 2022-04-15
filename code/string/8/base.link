@@ -1,0 +1,9 @@
+
+load @drumwork/seed/code/string
+  take tree string
+
+form string-utf-8
+  fuse string
+    like unsigned-integer-8
+
+# https://github.com/ashtuchkin/iconv-lite/wiki/Supported-Encodings
