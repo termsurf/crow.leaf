@@ -1,20 +1,33 @@
 
+note <https://github.com/apple/swift/blob/main/docs/StringDesign.rst>
+note <The Characters enumerated when simply looping over elements of a Swift string are extended grapheme clusters as determined by Unicode's Default Grapheme Cluster Boundary Specification.>
+
 form text
-  task replace-pattern
+  task replace
     take pattern, like text
     take replacement, like task
     free seed, like self
 
-  task replace-pattern
+  task replace
     take pattern, like regular-expression
     take replacement, like task
     free seed, like self
 
-  task get-leftmost-position-of-pattern
+  task get-leftmost-position
+    take pattern, like text
+    free seed, like size
+
+  task get-leftmost-position
     take pattern, like regular-expression
     free seed, like size
 
-  task get-rightmost-position-of-pattern
+  task get-rightmost-position
+    take pattern, like text
+    free seed, like size
+
+  task get-rightmost-position
+    take pattern, like regular-expression
+    free seed, like size
 
   task get-human-symbol-at
 
@@ -36,7 +49,7 @@ form text
 
   task remove-utf-32-point-at-position
 
-  task split-by-pattern
+  task split
     free seed
       like list
         like text
@@ -53,14 +66,6 @@ form text
 
   task add-utf-32-point-at-end
 
-  task convert-to-camel-case
-  task convert-to-capital-case
-  task convert-to-kebab-case
-  task convert-to-lower-case
-  task convert-to-snake-case
-  task convert-to-swap-case
-  task convert-to-title-case
-  task convert-to-upper-case
   task truncate-at-word-boundary
   task slice
   task get-substring
@@ -70,3 +75,8 @@ form text
   task count-substrings
   task count-words
   task search
+  task trim-left
+  task trim-right
+  task trim
+  task pad-left
+  task pad-right

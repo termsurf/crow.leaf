@@ -26,3 +26,9 @@ form iterator
   task partition
   task reduce
   task fold
+  task test-if-all-match
+  task test-if-any-match
+  task get-first
+    note <Commonly called "find".>
+  task get-smallest-element
+  task get-largest-element

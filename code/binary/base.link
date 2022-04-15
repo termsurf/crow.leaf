@@ -1,6 +1,5 @@
 
 # true and false
 
-form true
-
-form false
+form binary
+  task toggle
