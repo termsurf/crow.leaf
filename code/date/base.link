@@ -39,4 +39,4 @@ tree define-interval
     task get-end-of-{name}
       free result, like unsigned-integer-32
 
-    task set-end-of-{name}
+    task set-to-end-of-{name}

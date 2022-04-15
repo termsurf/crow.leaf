@@ -1,7 +1,7 @@
 
-tree size
+tree integer
   take self-type, like like
-  take side-type, like like
+  take unsigned-type, like like
 
   hook bind
     task add
@@ -23,22 +23,22 @@ tree size
     task remainder
     task exponentiate
     task count-ones
-      free seed, like side-type
+      free seed, like unsigned-type
 
     task count-zeroes
-      free seed, like side-type
+      free seed, like unsigned-type
 
     task count-leading-ones
-      free seed, like side-type
+      free seed, like unsigned-type
 
     task count-leading-zeroes
-      free seed, like side-type
+      free seed, like unsigned-type
 
     task count-trailing-ones
-      free seed, like side-type
+      free seed, like unsigned-type
 
     task count-trailing-zeroes
-      free seed, like side-type
+      free seed, like unsigned-type
 
     task rotate-left
     task rotate-right
@@ -89,7 +89,7 @@ tree size
     task convert-from-big-endian-bytes
     task convert-from-little-endian-bytes
     task convert-from-native-endian-bytes
-    task bitwise-link # bit-and
-    task bitwise-sink # bit-or
-    task bitwise-exclusive-sink
+    task bitwise-and # bit-and
+    task bitwise-or # bit-or
+    task bitwise-exclusive-or
     task clone

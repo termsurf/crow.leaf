@@ -1,7 +1,4 @@
 
-# todo: find search abstractions
-# https://vocajs.com/
-
 form text
   task replace-pattern
     take pattern, like text
@@ -19,40 +16,42 @@ form text
 
   task get-rightmost-position-of-pattern
 
-  task get-8-bit-symbol-at-position
+  task get-human-symbol-at
 
-  task get-16-bit-symbol-at-position
+  task get-utf-8-point-at-position
 
-  task get-32-bit-symbol-at-position
+  task get-utf-16-point-at-position
 
-  task set-8-bit-symbol-at-position
+  task get-utf-32-point-at-position
 
-  task set-16-bit-symbol-at-position
+  task set-utf-8-point-at-position
 
-  task set-32-bit-symbol-at-position
+  task set-utf-16-point-at-position
 
-  task remove-8-bit-symbol-at-position
+  task set-utf-32-point-at-position
 
-  task remove-16-bit-symbol-at-position
+  task remove-utf-8-point-at-position
 
-  task remove-32-bit-symbol-at-position
+  task remove-utf-16-point-at-position
+
+  task remove-utf-32-point-at-position
 
   task split-by-pattern
     free seed
       like list
         like text
 
-  task add-8-bit-symbol-at-start
+  task add-utf-8-point-at-start
 
-  task add-8-bit-symbol-at-end
+  task add-utf-8-point-at-end
 
-  task add-16-bit-symbol-at-start
+  task add-utf-16-point-at-start
 
-  task add-16-bit-symbol-at-end
+  task add-utf-16-point-at-end
 
-  task add-32-bit-symbol-at-start
+  task add-utf-32-point-at-start
 
-  task add-32-bit-symbol-at-end
+  task add-utf-32-point-at-end
 
   task convert-to-camel-case
   task convert-to-capital-case
@@ -62,9 +61,6 @@ form text
   task convert-to-swap-case
   task convert-to-title-case
   task convert-to-upper-case
-  task get-grapheme-at
-  task get-unicode-point-at
-  task get-byte-at
   task truncate-at-word-boundary
   task slice
   task get-substring
@@ -73,10 +69,4 @@ form text
   task count-graphemes
   task count-substrings
   task count-words
-  task escape-html
-  task escape-regexp
-  task unescape-html
-  task unescape-regexp
   task search
-
-  task sanitize-html

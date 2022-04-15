@@ -9,3 +9,6 @@ form array
   task get
   task get-size
   task zip
+  task clone
+  task format-to-string
+  task get-default

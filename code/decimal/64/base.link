@@ -1,3 +1,6 @@
 
 host max
 host min
+
+form decimal-64
+  note <A "double" data type, with 15 points of decimal precision.>
