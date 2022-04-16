@@ -1,7 +1,7 @@
 
-wear diff
+wear subtract
   note <Subtract>
 
-  task diff
+  task subtract
     link self, like self
     link self, like self

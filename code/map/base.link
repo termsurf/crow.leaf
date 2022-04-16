@@ -1,5 +1,5 @@
 
-form bulb
+form map
   note <A map or dictionary, a lookup.>
   task get-for-mutation
   task set

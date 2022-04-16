@@ -1,10 +1,10 @@
 
-wear code-base
+wear move-code-base
   note <Shift left>
 
   task move-code-base
 
-wear code-head
+wear move-code-head
   note <Shift right>
 
   task move-code-head

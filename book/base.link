@@ -50,3 +50,9 @@ comb-64
 head <Walk>
 
 flow <A walk is an iterator.>
+
+From the year 1970, keeps track of the year, the day of the year, and the seconds in the day. Higher precision dates can keep track of fractional seconds based on powers of 10.
+
+We have a date range which is keeps track of accuracy.
+
+300BCE
