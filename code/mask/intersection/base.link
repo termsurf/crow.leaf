@@ -1,2 +1,11 @@
 
 note <Bitwise And trait.>
+
+mask intersection
+  head other, base self
+  take output
+
+  task meet
+    take self
+    take other, like other
+    free self/output

@@ -5,9 +5,9 @@
 |:---|:---|
 | `mark` | `UInt`, `BigUInt`, etc. (unsigned integer) |
 | `diff` | `Int`, `BigInt` (signed integer) |
-| `flex` | `Decimal` (float, double, bignumber) |
-| `flex-32` | `Float` (signed decimal 32 bits, 7 precision) |
-| `flex-64` | `Double` (signed decimal 64 bits, 15 precision) |
+| `comb` | `Decimal` (float, double, bignumber) |
+| `comb-32` | `Float` (signed decimal 32 bits, 7 precision) |
+| `comb-64` | `Double` (signed decimal 64 bits, 15 precision) |
 | `text` | `String` |
 | `code` | `Boolean` |
 | `line` | `Array`, `Slice`, etc. |

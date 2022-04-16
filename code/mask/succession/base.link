@@ -3,6 +3,6 @@ mask succession
   note <Iteration trait.>
   take item, like like
 
-  task load-next
+  task head
     take self, flex true
     free maybe, like self/item
