@@ -1,0 +1,27 @@
+
+mask incomplete-comparison
+  note <Partial Equality.>
+  head other, like dimension, base self
+
+  task is-equal
+    take self
+    take other, like other
+    free wave
+
+  task is-not-equal
+    take self
+    take other, like other
+    free wave
+
+mask complete-comparison
+  note <Total equality.>
+
+coat form
+  head t, like dimension-free
+
+  suit t
+    wear imcomplete-comparison
+      task is-equal
+        take self
+        take other, like t
+        free wave

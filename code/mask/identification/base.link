@@ -1,0 +1,6 @@
+
+mask identification
+  note <Test like>
+
+  task is-like
+    like task

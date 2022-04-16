@@ -1,0 +1,31 @@
+
+mask incomplete-direction
+  note <Partial order.>
+
+mask complete-direction
+  note <Total order.>
+
+host direction
+  term base, diff -1
+  term meet, diff 0
+  term head, diff 1
+
+coat form
+  head t, like dimension-free
+
+  suit t
+    wear imcomplete-comparison
+      task incomplete-compare
+        take self
+        take other, like t
+        free option, like direction
+
+coat form
+  head t, like dimension-free
+
+  suit t
+    wear complete-comparison
+      task compare
+        take self
+        take other, like t
+        free direction

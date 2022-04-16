@@ -1,0 +1,15 @@
+
+# pub trait Add<Rhs = Self> {
+#     type Output;
+#     fn add(self, rhs: Rhs) -> Self::Output;
+# }
+
+mask addition
+  note <Add>
+  head other, like self
+  take output
+
+  task add
+    take self, move true
+    take other, move true
+    free self/output

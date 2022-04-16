@@ -1,0 +1,14 @@
+
+mask initialization
+  note <Default value>
+
+  task make-default
+    firm true
+
+coat form
+  head t, like dimension-free
+
+  suit t
+    wear initialization
+      task make-default
+        free self
