@@ -13,14 +13,14 @@ mask incomplete-comparison
     take other, like other
     free wave
 
-mask complete-comparison
+mask comparison
   note <Total equality.>
 
 coat form
   head t, like dimension-free
 
   suit t
-    wear imcomplete-comparison
+    wear comparison
       task is-equal
         take self
         take other, like t

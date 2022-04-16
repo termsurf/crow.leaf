@@ -7,6 +7,6 @@ mask conversion
     link self, like self
     free seed, like like
 
-  task test-cast
+  task is-cast
     link self, like self
     free seed, like sink

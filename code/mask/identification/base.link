@@ -2,5 +2,8 @@
 mask identification
   note <Test like>
 
+  task like
+    note <Get the form object it belongs to.>
+
   task is-like
     like task

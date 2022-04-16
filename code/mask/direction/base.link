@@ -2,10 +2,10 @@
 mask incomplete-direction
   note <Partial order.>
 
-mask complete-direction
+mask direction
   note <Total order.>
 
-host direction
+host direction-type
   term base, diff -1
   term meet, diff 0
   term head, diff 1
@@ -18,13 +18,13 @@ coat form
       task incomplete-compare
         take self
         take other, like t
-        free option, like direction
+        free option, like direction-type
 
 coat form
   head t, like dimension-free
 
   suit t
-    wear complete-comparison
+    wear comparison
       task compare
         take self
         take other, like t

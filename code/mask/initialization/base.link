@@ -2,7 +2,7 @@
 mask initialization
   note <Default value>
 
-  task make-default
+  task initialize
     firm true
 
 coat form
