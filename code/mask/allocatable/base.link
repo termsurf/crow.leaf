@@ -1,14 +1,14 @@
 
-mask allocation
+mask allocatable
   head allocated, like dimension-free
 
   task loan
     take self
     free allocated
 
-mask allocation-flex
+mask flex-allocatable
   head allocated, like dimension-free
-  base allocation, like allocated
+  base allocatable, like allocated
 
   task loan
     take self, flex true
