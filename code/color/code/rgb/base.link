@@ -1,9 +1,9 @@
 
-load @treesurf/seed/code/shared
+load @treesurf/nest/code/shared
   take tree define-each
   take tree access
 
-load @treesurf/seed/code/color
+load @treesurf/nest/code/color
   take host space
 
 form rgb
