@@ -1,4 +1,3 @@
-
 <br/>
 <br/>
 <br/>
@@ -8,10 +7,10 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/teamtreesurf/moon/blob/make/view/moon.svg?raw=true' height='192'>
+  <img src='https://github.com/teamtreesurf/moon.link/blob/make/view/moon.svg?raw=true' height='192'>
 </p>
 
-<h3 align='center'>moon</h3>
+<h3 align='center'>moon.link</h3>
 <p align='center'>
   Link Text Standard Library Specification
 </p>
@@ -22,16 +21,16 @@
 
 ### Welcome
 
-The [`wolf`](https://github.com/teamtreesurf/wolf) library is one possible implementation of this interface. The goal of separating `moon` from `wolf` is so that one could theoretically develop an optimal version of the implementation in parallel to a basic implementation, then swap them out, without interferring with the main library interface. This `moon` library is basically the specification for the standard library. It could also be used in other programming languages as it doesn't have any implementation.
+The [`wolf.link`](https://github.com/teamtreesurf/wolf.link) library is one possible implementation of this interface. The goal of separating `moon.link` from `wolf.link` is so that one could theoretically develop an optimal version of the implementation in parallel to a basic implementation, then swap them out, without interferring with the main library interface. This `moon.link` library is basically the specification for the standard library. It could also be used in other programming languages as it doesn't have any implementation.
 
 ### Relationships
 
-| specification | implementation | description |
-|:----:|:----:|:----|
-| [`moon`](https://github.com/teamtreesurf/moon) | [`wolf`](https://github.com/teamtreesurf/wolf) | **Standard Library** |
-| <a href="https://github.com/teamtreesurf/moon"><img src='https://github.com/teamtreesurf/moon/blob/make/view/moon.svg?raw=true' height='64'></a> | <a href="https://github.com/teamtreesurf/wolf"><img src='https://github.com/teamtreesurf/wolf/blob/make/view/view.svg?raw=true' height='64'></a> | These are the lowest-level datatypes and standards for abstracting away architectures in a basic programming language environment. |
-| [`tree`](https://github.com/teamtreesurf/tree) | [`crow`](https://github.com/teamtreesurf/crow) | **Framework** |
-| <a href="https://github.com/teamtreesurf/tree"><img src='https://github.com/teamtreesurf/tree/blob/make/view/view.svg?raw=true' height='64'></a> | <a href="https://github.com/teamtreesurf/crow"><img src='https://github.com/teamtreesurf/crow/blob/make/view/view.svg?raw=true' height='64'></a> | These are high-level framework components, which is an opinionated abstraction for common web app development paradigms. |
+|                                                                       specification                                                                        |                                                                       implementation                                                                       | description                                                                                                                        |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------- |
+|                                                  [`moon.link`](https://github.com/teamtreesurf/moon.link)                                                  |                                                  [`wolf.link`](https://github.com/teamtreesurf/wolf.link)                                                  | **Standard Library**                                                                                                               |
+| <a href="https://github.com/teamtreesurf/moon.link"><img src='https://github.com/teamtreesurf/moon.link/blob/make/view/moon.svg?raw=true' height='64'></a> | <a href="https://github.com/teamtreesurf/wolf.link"><img src='https://github.com/teamtreesurf/wolf.link/blob/make/view/view.svg?raw=true' height='64'></a> | These are the lowest-level datatypes and standards for abstracting away architectures in a basic programming language environment. |
+|                                                  [`tree.link`](https://github.com/teamtreesurf/tree.link)                                                  |                                                  [`crow.link`](https://github.com/teamtreesurf/crow.link)                                                  | **Framework**                                                                                                                      |
+| <a href="https://github.com/teamtreesurf/tree.link"><img src='https://github.com/teamtreesurf/tree.link/blob/make/view/view.svg?raw=true' height='64'></a> | <a href="https://github.com/teamtreesurf/crow.link"><img src='https://github.com/teamtreesurf/crow.link/blob/make/view/view.svg?raw=true' height='64'></a> | These are high-level framework components, which is an opinionated abstraction for common web app development paradigms.           |
 
 ### License
 
