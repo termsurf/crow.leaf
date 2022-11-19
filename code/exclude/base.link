@@ -1,0 +1,18 @@
+
+load @treesurf/moon
+  take suit like
+  take suit never
+  take suit test
+
+face exclude
+  head t
+  head u
+
+  like test
+    stem roll
+      like t
+      like u
+      hook true
+        like never
+      hook false
+        like t

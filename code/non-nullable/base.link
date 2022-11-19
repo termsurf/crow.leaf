@@ -1,0 +1,24 @@
+
+load @treesurf/moon
+  take suit like
+  take suit never
+  take suit or
+  take suit test
+
+load @treesurf/nest/code/javascript/native
+  take face native-null
+  take face native-undefined
+
+face non-nullable, name <NonNullable>
+  head t
+
+  like test
+    stem roll
+      like t
+      like or
+        like native-null
+        like native-undefined
+      hook true
+        like never
+      hook false
+        like t

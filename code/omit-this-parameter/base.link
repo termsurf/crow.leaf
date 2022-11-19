@@ -1,0 +1,39 @@
+
+load @treesurf/moon
+  take suit like
+  take suit task
+  take suit test
+  take suit unknown
+
+load @treesurf/nest/code/javascript/es5
+  take face this-parameter-type
+
+load @treesurf/nest/code/javascript/native
+  take face a
+  take face r
+
+face omit-this-parameter, name <OmitThisParameter>
+  head t
+
+  like test
+    stem roll
+      like unknown
+      like this-parameter-type
+        like t
+      hook true
+        like t
+      hook false
+        like test
+          stem roll
+            like t
+            like task
+              take args, name a
+                rest true
+              free seed, name r
+            hook true
+              like task
+                take args, like a
+                  rest true
+                free seed, like r
+            hook false
+              like t

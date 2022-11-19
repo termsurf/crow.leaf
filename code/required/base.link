@@ -1,0 +1,21 @@
+
+load @treesurf/moon
+  take suit index
+  take suit key-list
+  take suit like
+
+face required, name <Required>
+  head t
+
+  slot self
+  walk link-name-like-list
+    loan
+    like key-list
+      like t
+    take name
+    take p
+    beam self
+      take {name}
+        like index
+          like t
+          like p

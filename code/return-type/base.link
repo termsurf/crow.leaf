@@ -1,0 +1,28 @@
+
+load @treesurf/moon
+  take suit any
+  take suit like
+  take suit task
+  take suit test
+
+load @treesurf/nest/code/javascript/native
+  take face r
+
+face return-type, name <ReturnType>
+  head t
+    base task
+      take args, like any
+        rest true
+      free seed, like any
+
+  like test
+    stem roll
+      like t
+      like task
+        take args, like any
+          rest true
+        free seed, name r
+      hook true
+        like r
+      hook false
+        like any

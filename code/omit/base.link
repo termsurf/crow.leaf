@@ -1,0 +1,22 @@
+
+load @treesurf/moon
+  take suit any
+  take suit key-list
+  take suit like
+
+load @treesurf/nest/code/javascript/es5
+  take face exclude
+  take face pick
+
+face omit, name <Omit>
+  head t
+  head k
+    base key-list
+      like any
+
+  like pick
+    like t
+    like exclude
+      like key-list
+        like t
+      like k

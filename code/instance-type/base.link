@@ -1,0 +1,19 @@
+
+load @treesurf/moon
+  take suit any
+  take suit like
+  take suit test
+
+load @treesurf/nest/code/javascript/native
+  take face r
+
+face instance-type, name <InstanceType>
+  head t
+
+  like test
+    stem roll
+      like t
+      hook true
+        like r
+      hook false
+        like any

@@ -1,0 +1,20 @@
+
+load @treesurf/moon
+  take suit any
+  take suit key-list
+  take suit like
+
+face record, name <Record>
+  head k
+    base key-list
+      like any
+  head t
+
+  slot self
+  walk link-name-like-list
+    loan like k
+    take name
+    take p
+    beam self
+      take {name}
+        like t

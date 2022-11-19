@@ -1,0 +1,29 @@
+
+load @treesurf/moon
+  take suit any
+  take suit like
+  take suit never
+  take suit task
+  take suit test
+
+load @treesurf/nest/code/javascript/native
+  take face p
+
+face parameters, name <Parameters>
+  head t
+    base task
+      take args, like any
+        rest true
+      free seed, like any
+
+  like test
+    stem roll
+      like t
+      like task
+        take args, name p
+          rest true
+        free seed, like any
+      hook true
+        like p
+      hook false
+        like never
