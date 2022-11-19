@@ -1,10 +1,10 @@
 
 load ../term
-  take form term
+  take suit term
 
 load ../bond
-  take form bond
+  take suit bond
 
-form bind
-  link term, form term
-  link bond, form bond
+suit bind
+  link term, like term
+  link bond, like bond
