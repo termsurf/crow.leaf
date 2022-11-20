@@ -4,7 +4,7 @@ load @treesurf/moon
   take suit key-list
   take suit like
 
-face pick, name <Pick>
+suit pick
   head t
   head k
     base key-list

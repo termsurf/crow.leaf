@@ -4,12 +4,12 @@ load @treesurf/moon
   take suit key-list
   take suit like
 
-face partial, name <Partial>
+suit partial
   head t
 
   slot self
   walk link-name-like-list
-    loan
+    loan t
     like key-list
       like t
     take name

@@ -6,10 +6,7 @@ load @treesurf/moon
   take suit task
   take suit test
 
-load @treesurf/nest/code/javascript/native
-  take face p
-
-face parameters, name <Parameters>
+suit parameters
   head t
     base task
       take args, like any

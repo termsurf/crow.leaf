@@ -1,4 +1,7 @@
 
+load ../call
+  take suit call
+
 form task
   task throttle
   task debounce
@@ -11,9 +14,6 @@ form task
   task spread
   task wrap
   task get-number-of-inputs
-
-load ../call
-  take form call
 
 form flow-seat
   case call, form call

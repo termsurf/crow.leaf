@@ -4,7 +4,7 @@ load @treesurf/moon
   take suit never
   take suit test
 
-face extract
+suit extract
   head t
   head u
 
