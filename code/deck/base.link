@@ -1,13 +1,14 @@
 
 load ../text
-  take form text
+  take suit text
 
 load ../term
-  take form term
+  take suit term
 
-form deck
-  link mark, form text
+suit deck
+  link mark, like text
   link term, list term
-  link head, form text
-  link host, form text
-  link name, form text
+  link head, like text
+  link host, like text
+  link name, like text
+  link bear, like text
