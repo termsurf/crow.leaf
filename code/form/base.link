@@ -1,41 +1,28 @@
 
-form form
-  take take, list take
-  take task, list task
+suit term
+  like text
 
-form take
-  take name, like term
-  take like, like like
-
-form task
-  take take, list take
-  take task, list task
-  take call, list call
-
-form term
-  form text
-
-form form
+suit form
   case base-form
   case tree-form
   case case-form
 
-form base-form
-  link name, form term
+suit base-form
+  link name, like term
   link head, list head
   link base, list base
   link bond, list bond
   link hook, list hook
   link task, list task
-  link turn, form turn
+  link turn, like turn
 
-form tree-form, form base-form
+suit tree-form, base base-form
   link host, list form
 
-form case-form
-  link name, form term
+suit case-form
+  link name, like term
   link case, list form
 
-form bond
-  link name, form term
+suit bond
+  link name, like term
   link flow, list flow

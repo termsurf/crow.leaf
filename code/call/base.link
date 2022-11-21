@@ -1,31 +1,31 @@
 
 load ../bind
-  take form bind
+  take suit bind
 
 load ../task
-  take form base
-  take form flow
-    save form task-flow
+  take suit base
+  take suit flow
+    save suit task-flow
 
-form call
-  link name, form term
+suit call
+  link name, like term
   link bind, list bind
-  link hook, mesh hook
+  link hook, mesh hook, link name
 
-form hook
-  link name, form term
-  link band, form term
+suit hook
+  link name, like term
+  link band, like term
   link base, list base
   link flow, list task-flow
   link task, list task
 
-form flow
+suit flow
   case call
   case save
   case back
 
-form save
-  link road, form road
+suit save
+  link road, like road
 
-form back
-  link term, form term
+suit back
+  link term, like term

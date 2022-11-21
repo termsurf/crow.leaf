@@ -16,7 +16,7 @@ host interval
   term millisecond
   term microsecond
 
-form date
+suit date
   fuse define-each, loan interval
     loan define-interval
 
@@ -41,17 +41,17 @@ tree define-interval
 
     task set-to-end-of-{name}
 
-form date
-  link year, form natural-number
-  link month, form natural-number
-  link day, form natural-number
+suit date
+  link year, like natural-number
+  link month, like natural-number
+  link day, like natural-number
 
   hold is-between
     loan month
     size 1
     size 12
 
-  seek month
+  stem case, loan month
     case 1, test is-day-within, size 31
     case 2
       seek call modulo-year, size 0
@@ -76,14 +76,14 @@ form date
 
   task modulo-year
     hide rise
-    link size
+    take size
     call modulo
       loan year
       loan size
 
   task is-day-within
     hide rise
-    link size
-    test is-less-than-or-equal-to
+    take size
+    call is-less-than-or-equal-to
       loan day
       loan size

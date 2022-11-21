@@ -3,8 +3,8 @@ task get-current-timestamp # get now
 
 form time
   note <Data type for storing times.>
-  take seconds, like signed-integer-32
-  take microseconds, like signed-integer-32
+  link seconds, like signed-integer-32
+  link microseconds, like signed-integer-32
 
   task get-duration-since
     take earlier, like time

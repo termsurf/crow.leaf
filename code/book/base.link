@@ -1,62 +1,62 @@
 
-form zone
+suit zone
 
-form book
-  link head, form head
-  link zone, form list
+suit book
+  link head, like head
+  link zone, like list
 
-form word-seat
+suit word-seat
   case text
   case term
 
-form head
-  link name, form text
+suit head
+  link name, like text
   link face, list face
-  link date, form date
+  link date, like date
   link mark
-    link base, form text
-    link line, form text
-    link head, form text
-  link text, form text
+    link base, like text
+    link line, like text
+    link head, like text
+  link text, like text
   link word, list word-seat
 
-form lead
-  link text, form text
-  link look, form look
-    miss rise
+suit lead
+  link text, like text
+  link look, like look
+    void true
   link zone, list zone
 
-form flow
-  link text, form text
-  link look, form look
+suit flow
+  link text, like text
+  link look, like look
 
-form bank-seat
+suit bank-seat
   case list
   case flow
 
-form bank
+suit bank
   link zone, list bank-seat
 
-form list-seat
+suit list-seat
   case list
   case flow
 
-form list
-  link make, form term
+suit list
+  link make, like term
     take seed, term mark
     take seed, term hand
   link zone, list list-seat
 
-form look
-  link tilt, form sink
-    miss rise
-  link skew, form mark
-    miss rise
-  link bold, form mark
-    miss rise
-  link tint, form tint
-    miss rise
+suit look
+  link tilt, like sink
+    void rise
+  link skew, like mark
+    void rise
+  link bold, like mark
+    void rise
+  link tint, like tint
+    void rise
   link code
     take head
-      take form, form term
-      take form, form sink
+      take suit, like term
+      take suit, like sink

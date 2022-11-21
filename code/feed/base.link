@@ -22,7 +22,7 @@ suit feed-read
 
 suit feed-sort
   link term
-  link fall, loan rise
+  link fall, loan true
 
 suit feed-rule
   case feed-test

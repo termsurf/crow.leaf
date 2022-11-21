@@ -2,7 +2,7 @@
 load ../call
   take suit call
 
-form task
+suit task
   task throttle
   task debounce
   task bind
@@ -15,23 +15,23 @@ form task
   task wrap
   task get-number-of-inputs
 
-form flow-seat
-  case call, form call
-  case task, form task
-  case form, form form
+suit flow-seat
+  case call, like call
+  case task, like task
+  case form, like form
 
-form task
-  link name, form term
+suit task
+  link name, like term
   link head, list head
   link link, list link
-  link flow, form list, form flow-seat
+  link flow, like list, like flow-seat
 
-form head
-  link name, form term
-  link head-form, form form
-  link fall, form task, link head-form
+suit head
+  link name, like term
+  link head-form, like form
+  link fall, like task, link head-form
 
-form link
-  link name, form term
-  link link-form, form form
-  link fall, form task, link link-form
+suit link
+  link name, like term
+  link link-form, like form
+  link fall, like task, link link-form

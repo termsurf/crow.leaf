@@ -1,7 +1,7 @@
 
 task make-with-capacity
 
-form list
+suit list
   note <A growable, non-contiguous set of memory chunks divided into elements.>
   head item-type, like like
 
@@ -56,7 +56,7 @@ form list
   task is-ascii
   task concat
   task flatten
-    # flatten and flatten deep and flatten depth
+    note <flatten and flatten deep and flatten depth>
   task compact
   task difference
   task find
