@@ -1,3 +1,4 @@
 
 deck @treesurf/moon
   bear ./code
+  mint <0.0.1>
