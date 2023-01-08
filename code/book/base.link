@@ -43,8 +43,8 @@ suit list-seat
 
 suit list
   link make, like term
-    take seed, term mark
-    take seed, term hand
+    take mark
+    take hand
   link zone, list list-seat
 
 suit look

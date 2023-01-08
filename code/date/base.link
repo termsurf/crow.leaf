@@ -60,9 +60,9 @@ suit date
             case 0
               seek call modulo-year, size 400
                 case 0, test is-day-within, size 29
-                fall, test is-day-within, size 28
-            fall, test is-day-within, size 29
-        fall, test is-day-within, size 28
+                fall back, test is-day-within, size 28
+            fall back, test is-day-within, size 29
+        fall back, test is-day-within, size 28
     case 3, test is-day-within, size 31
     case 4, test is-day-within, size 30
     case 5, test is-day-within, size 31

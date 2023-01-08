@@ -22,7 +22,8 @@ suit feed-read
 
 suit feed-sort
   link term
-  link fall, loan true
+  link fall, like wave
+    base true
 
 suit feed-rule
   case feed-test
