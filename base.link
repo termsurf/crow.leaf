@@ -1,4 +1,4 @@
 
-deck @treesurf/moon
+deck @tunebond/moon
   bear ./code
   mint <0.0.1>

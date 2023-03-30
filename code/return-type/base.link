@@ -1,11 +1,11 @@
 
-load @treesurf/moon
+load @tunebond/moon
   take suit any
   take suit like
   take suit task
   take suit test
 
-load @treesurf/nest/code/javascript/native
+load @tunebond/nest/code/javascript/native
   take face r
 
 face return-type, name <ReturnType>

@@ -14,9 +14,9 @@ suit head
   link face, list face
   link date, like date
   link mark
-    link base, like text
-    link line, like text
-    link head, like text
+    # link base, like text
+    # link line, like text
+    # link head, like text
   link text, like text
   link word, list word-seat
 
