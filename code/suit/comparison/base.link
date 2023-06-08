@@ -15,13 +15,3 @@ mask incomplete-comparison
 
 mask comparison
   note <Total equality.>
-
-coat form
-  head t, like dimension-free
-
-  suit t
-    wear comparison
-      task is-equal
-        take self
-        take other, like t
-        free wave

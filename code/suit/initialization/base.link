@@ -3,12 +3,3 @@ mask initialization
   note <Default value>
 
   task initialize
-    firm true
-
-coat form
-  head t, like dimension-free
-
-  suit t
-    wear initialization
-      task make-default
-        free self

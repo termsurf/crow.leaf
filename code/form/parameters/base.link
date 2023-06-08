@@ -1,0 +1,26 @@
+
+load @tunebond/moon
+  take form any
+  take form like
+  take form never
+  take form task
+  take form test
+
+form parameters
+  head t
+    base task
+      take args, like any
+        rest true
+      free seed, like any
+
+  like test
+    stem roll
+      like t
+      like task
+        take args, name p
+          rest true
+        free seed, like any
+      hook true
+        like p
+      hook false
+        like never

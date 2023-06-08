@@ -4,7 +4,7 @@ suit allocation
 
   task loan
     take self
-    free allocated
+    like allocated
 
 suit flex-allocation
   head allocated, like dimension-free
@@ -12,4 +12,4 @@ suit flex-allocation
 
   task loan
     take self, flex true
-    free allocated, flex true
+    like allocated, flex true

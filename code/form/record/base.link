@@ -1,0 +1,20 @@
+
+load @tunebond/moon
+  take form any
+  take form key-list
+  take form like
+
+form record
+  head k
+    base key-list
+      like any
+  head t
+
+  slot self
+  walk link-name-like-list
+    loan like k
+    take name
+    take p
+    beam self
+      take {name}
+        like t

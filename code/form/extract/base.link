@@ -1,0 +1,18 @@
+
+load @tunebond/moon
+  take form like
+  take form never
+  take form test
+
+form extract
+  head t
+  head u
+
+  like test
+    stem roll
+      like t
+      like u
+      hook true
+        like t
+      hook false
+        like never

@@ -2,9 +2,9 @@
 mask division
   note <Divide.>
   head other, base self
-  take output
+  head output
 
   task divide
     take self, move true
     take other, like other
-    free self/output
+    like output

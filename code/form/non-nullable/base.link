@@ -1,0 +1,24 @@
+
+load @tunebond/moon
+  take form like
+  take form never
+  take form or
+  take form test
+
+load @tunebond/nest/code/javascript/native
+  take face native-null
+  take face native-undefined
+
+face non-nullable, name <NonNullable>
+  head t
+
+  like test
+    stem roll
+      like t
+      like or
+        like native-null
+        like native-undefined
+      hook true
+        like never
+      hook false
+        like t

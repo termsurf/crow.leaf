@@ -1,10 +1,10 @@
 
-suit addition
+mark addition
   note <Add trait>
-  head other, like self
-  take output
+  head output
+  head other, base self
 
   task add
     take self, move true
     take other, move true
-    free output
+    like output

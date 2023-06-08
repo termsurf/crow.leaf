@@ -2,9 +2,9 @@
 mask iteration
   task walk
     take self
-    free succession
+    like succession
 
 mask iteration-flex
   task walk
     take self, flex true
-    free succession-flex
+    like succession-flex

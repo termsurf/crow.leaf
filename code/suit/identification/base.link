@@ -6,4 +6,4 @@ mask identification
     note <Get the form object it belongs to.>
 
   task is-like
-    like task
+    like wave

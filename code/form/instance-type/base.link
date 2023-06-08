@@ -1,0 +1,19 @@
+
+load @tunebond/moon
+  take form any
+  take form like
+  take form test
+
+load @tunebond/nest/code/javascript/native
+  take face r
+
+face instance-type, name <InstanceType>
+  head t
+
+  like test
+    stem roll
+      like t
+      hook true
+        like r
+      hook false
+        like any
