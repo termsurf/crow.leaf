@@ -12,7 +12,7 @@
 
 <h3 align='center'>moon.link</h3>
 <p align='center'>
-  Base Link Standard Library Specification
+  Base Link Application Framework
 </p>
 
 <br/>
