@@ -35,15 +35,6 @@ The project is divided into 3 main code folders:
 
 These can be imported and used in a project, rather than importing wolf, as the base types.
 
-## Relationships
-
-|                                                                   specification                                                                    |                                                                   implementation                                                                   | description                                                                                                                        |
-| :------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------- |
-|                                                [`moon.link`](https://github.com/tunebond/moon.link)                                                |                                                [`wolf.link`](https://github.com/tunebond/wolf.link)                                                | **Standard Library**                                                                                                               |
-| <a href="https://github.com/tunebond/moon.link"><img src='https://github.com/tunebond/moon.link/blob/make/view/moon.svg?raw=true' height='64'></a> | <a href="https://github.com/tunebond/wolf.link"><img src='https://github.com/tunebond/wolf.link/blob/make/view/view.svg?raw=true' height='64'></a> | These are the lowest-level datatypes and standards for abstracting away architectures in a basic programming language environment. |
-|                                                [`tree.link`](https://github.com/tunebond/tree.link)                                                |                                                [`crow.link`](https://github.com/tunebond/crow.link)                                                | **Framework**                                                                                                                      |
-| <a href="https://github.com/tunebond/tree.link"><img src='https://github.com/tunebond/tree.link/blob/make/view/view.svg?raw=true' height='64'></a> | <a href="https://github.com/tunebond/crow.link"><img src='https://github.com/tunebond/crow.link/blob/make/view/view.svg?raw=true' height='64'></a> | These are high-level framework components, which is an opinionated abstraction for common web app development paradigms.           |
-
 ## License
 
 Copyright 2022-2023 <a href='https://tune.bond'>TuneBond</a>
