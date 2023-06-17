@@ -1,4 +1,46 @@
 
+task text
+  task char-at
+    take index, like int
+    like string
+
+  task char-code-at
+    take index, like int
+    like nullable, like int
+
+  task index-of
+    take str, like string
+    take start-index, like int-nullable
+    like int
+
+  task last-index-of
+    take str, like string
+    take start-index, like int-nullable
+    like int
+
+  task split
+    take delimiter, like string
+    like array, like string
+
+  task substr
+    take pos, like int
+    take len, like int-nullable
+    like string
+
+  task substring
+    take start-index, like int
+    take end-index, like int-nullable
+    like string
+
+  task to-lower-case
+    like string
+
+  task to-string
+    like string
+
+  task to-upper-case
+    like string
+
 fuse define-each, loan encoding
   loan define-encoding
 

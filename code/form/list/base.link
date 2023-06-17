@@ -83,3 +83,109 @@ form list
   task reject
   task sample
   task shuffle
+
+form array-methods
+  task concat
+    head t
+    take a, like array, like t
+    like array, like t
+
+  task contains
+    head t
+    take x, like t
+    like bool
+
+  task copy
+    head t
+    like array, like t
+
+  task filter
+    head t
+    # take f, like t -> bool
+    like array, like t
+
+  task index-of
+    head t
+    take x, like t
+    take from-index, like int-nullable
+    like int
+
+  task insert
+    head t
+    take pos, like int
+    take x, like t
+    like void
+
+  task iterator
+    head t
+    like array-iterator, like t
+
+  task join
+    take sep, like string
+    like string
+
+  task key-value-iterator
+    head t
+    like array-key-value-iterator, like t
+
+  task last-index-of
+    head t
+    take x, like t
+    take from-index, like int-nullable
+    like int
+
+  task map
+    head t
+    head s
+    take f, like t -> s
+    like array, like s
+
+  task pop
+    head t
+    like nullable, like t
+
+  task push
+    head t
+    take x, like t
+    like int
+
+  task remove
+    head t
+    take x, like t
+    like bool
+
+  task resize
+    take len, like int
+    like void
+
+  task reverse
+    like void
+
+  task shift
+    head t
+    like nullable, like t
+
+  task slice
+    head t
+    take pos, like int
+    take end, like int-nullable
+    like array, like t
+
+  task sort
+    head t
+    # take f, like t, t -> int
+    like void
+
+  task splice
+    head t
+    take pos, like int
+    take len, like int
+    like array, like t
+
+  task to-string
+    like string
+
+  task unshift
+    head t
+    take x, like t
+    like void

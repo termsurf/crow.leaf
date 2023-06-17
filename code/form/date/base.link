@@ -87,3 +87,51 @@ form date
     call is-less-than-or-equal-to
       loan day
       loan size
+
+  task get-date
+    like int
+
+  task get-day
+    like int
+
+  task get-full-year
+    like int
+
+  task get-hours
+    like int
+
+  task get-minutes
+    like int
+
+  task get-month
+    like int
+
+  task get-seconds
+    like int
+
+  task get-time
+    like float
+
+  task get-timezone-offset
+    like int
+
+  task get-utc-date
+    like int
+
+  task get-utc-day
+    like int
+
+  task get-utc-full-year
+    like int
+
+  task get-utc-hours
+    like int
+
+  task get-utc-minutes
+    like int
+
+  task get-utc-month
+    like int
+
+  task get-utc-seconds
+    like int
