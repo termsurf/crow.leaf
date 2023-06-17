@@ -1,73 +1,43 @@
 
-form hash
+form balanced-tree
   head k
   head v
 
   task clear
-    head imap
-      head k
-      head v
     like void
 
   task copy
-    head imap
-      head k
-      head v
-    like map
+    like balanced-tree
       like k
       like v
 
   task exists
-    head imap
-      head k
-      head v
     take key, like k
     like bool
 
   task get
-    head imap
-      head k
-      head v
     take key, like k
     like nullable, like v
 
   task iterator
-    head imap
-      head k
-      head v
     like iterator, like v
 
   task key-value-iterator
-    head imap
-      head k
-      head v
     like key-value-iterator
       like k
       like v
 
   task keys
-    head imap
-      head k
-      head v
     like iterator, like k
 
   task remove
-    head imap
-      head k
-      head v
     take key, like k
     like bool
 
   task set
-    head imap
-      head k
-      head v
     take key, like k
     take value, like v
     like void
 
   task to-string
-    head imap
-      head k
-      head v
     like string
