@@ -1,0 +1,48 @@
+
+# cli
+
+load @tunebond/nest
+  find task read
+  find task write
+
+hook make
+  wait true
+  take link, take l
+    like text
+    fall back
+      call read, <What is the path link?>
+        wait true
+    test is-text-mine
+      loan link-mine
+
+  call make-directory, text <code/dock/base>
+    bind recursive, wave true
+  call make-directory, text <host>
+
+  save make-base, <{card/host}/../deck/make>
+  save flow-base, read flow/host
+
+  call link/slice
+    size 1
+    link split
+    seed list
+      save host
+      save name
+
+  call copy-template
+    wait true
+    text <{make-base}/read.md>
+    text <{flow-base}/readme.md>
+    bind variables
+      bind link, loan link
+      bind title, call titleize, loan name
+
+  call copy-file
+    wait true
+    text <{make-base}/host/favicon.svg>
+    text <{flow-base}/host>
+
+  call copy-file
+    wait true
+    text <{make-base}/code/dock/base/base.link>
+    text <{flow-base}/code/dock/base>

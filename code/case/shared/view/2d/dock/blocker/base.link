@@ -1,0 +1,47 @@
+
+note <Modal>
+
+mask blocker
+  take is-closable
+  take close
+
+  host is-closing
+
+  task show
+  task hide
+
+  task handle-close
+    hide true
+    stem test
+      test is-true, loan is-closing
+      hook true, back void
+    save is-closing, term true
+    call self/hide?, wait true
+    call self/close?
+    call self/unmount
+
+  hook mount
+    call viewport/add-key-handler
+      term escape
+      loan self/handle-close
+    call self/show?
+
+  hook unmount
+    call viewport/remove-key-handler
+      term escape
+      loan self/handle-close
+
+  tree overlay
+    hook bind
+      hook click
+        call self/handle-close
+
+  tree close-button
+    hook bind
+      slot bind
+      stem test
+        test is-true, loan is-closable
+        hook true
+          beam bind
+            hook click
+              call self/handle-close

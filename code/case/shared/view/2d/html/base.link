@@ -1,0 +1,83 @@
+
+dock tree
+  take lead
+  take text
+  take word, list word
+  take media-type
+  take url
+  take name
+  take image-url
+  take twitter-card-type, fall <summary>
+  take domain
+  take hash-js
+  take hash-css
+  take font
+  take link, form tree
+
+  bond word-string
+    call join
+      bind list, link word
+      turn seed
+
+  text <\<!doctype html\>>
+
+  zone html
+    zone head
+      zone meta
+        bind charset, text <utf-8>
+      zone title, link lead
+      zone meta
+        bind name, text <words>
+        bind content, link word-string
+      zone meta
+        bind name, text <viewport>
+        bind content, text <width=device-width, height=device-height,initial-scale=1.0, minimum-scale=1.0>
+      test is-present
+        bind value, link media-type
+        zone meta
+          bind property, text <og:type>
+          bind content, link media-type
+      test is-present
+        bind value, link url
+        zone meta
+          bind property, text <og:url>
+          bind content, link url
+      zone meta
+        bind property, text <og:site_name>
+        bind content, link name
+      test is-present
+        bind value, link image-url
+        zone meta
+          bind property, text <og:image>
+          bind content, link image-url
+      zone meta
+        bind property, text <og:title>
+        bind content, link lead
+      zone meta
+        bind property, text <og:description>
+        bind content, link description
+      zone meta
+        bind name, text <twitter:card>
+        bind content, link twitter-card-type
+      zone meta
+        bind name, text <twitter:domain>
+        bind content, link domain
+      zone meta
+        bind name, text <twitter:title>
+        bind content, link lead
+      zone meta
+        bind name, text <twitter:description>
+        bind content, link description
+      walk font
+        zone link
+          bind rel, term preload
+          bind href, link base/path
+          bind as, term font
+      zone link
+        bind rel, term stylesheet
+        bind href, text </link-{hash-css}.css>
+    zone body
+      zone div
+        bind id, term link
+      zone script
+        bind src, text </link-{hash-js}.js>

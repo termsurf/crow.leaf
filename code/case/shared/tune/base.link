@@ -1,0 +1,13 @@
+
+tree tune
+  take start
+  take end
+  take term
+
+  hook bind
+    tune mark
+      bind start, loan start
+      bind end, loan end
+      hook update
+        take value
+        save {term}, loan value

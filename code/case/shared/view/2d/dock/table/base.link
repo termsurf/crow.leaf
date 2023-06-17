@@ -1,0 +1,124 @@
+
+form column
+  head item-type
+
+  take header
+    like or
+      like view
+      like text
+  take block
+    like or
+      like view
+        take item, like item-type
+      like text
+  take sort
+    like task
+      take a
+      take b
+      free c, like boolean
+
+tree table-block
+  hook bind
+    bind tag, term table
+    bind aria-role, term table
+
+tree thead-block
+  take label
+  hook bind
+    bind tag, term thead
+    bind aria-label, loan label
+
+tree tr-block
+  take label
+  hook bind
+    bind tr, term tbody
+    bind aria-role, loan label
+
+tree tbody-block
+  hook bind
+    bind tag, term tbody
+
+zone table
+  head item-type
+  ride table
+
+  take label
+
+  take records
+    like list
+      like item-type
+
+  take columns
+    like column
+      like item-type
+
+  free head
+
+  free headers
+
+  free rows
+
+  task handle-up
+    hide true
+
+    call self/set-focus-position
+      call decrement-to-min
+        loan self/focus-position
+        size 0
+
+  task handle-down
+    hide true
+
+    call self/set-focus-position
+      call increment-to-max
+        loan self/focus-position
+        call records/get-size
+
+  task handle-enter
+    hide true
+
+  hook focus
+    call self/add-key-handler
+      term up
+      loan self/handle-up
+    call self/add-key-handler
+      term down
+      loan self/handle-down
+
+  hook defocus
+    call self/remove-key-handler
+      term up
+      loan self/handle-up
+    call self/remove-key-handler
+      term down
+      loan self/handle-down
+
+  task set-focus-position
+    take position
+    save self/focus-position, loan position
+
+  walk list, loan columns
+    hook step
+      take column, name item
+      call append-to-list
+        loan headers
+        make header
+          bind sort, loan column/sort
+          bind mass, make column/header
+  walk list, loan records
+    hook step
+      take record, name item
+      take position
+      call append-to-list
+        loan rows
+        make row
+          loan item, load record
+          bind blocks
+            walk list, loan columns
+              hook step
+                take column, name item
+                make block
+                  loan mass, make column/block
+          hook click
+            call set-focus-position
+              loan position

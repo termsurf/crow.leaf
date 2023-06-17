@@ -21,20 +21,6 @@
 
 ## Welcome
 
-The [`wolf.link`](https://github.com/tunebond/wolf.link) library is one possible implementation of this interface. The goal of separating `moon.link` from `wolf.link` is so that one could theoretically develop an optimal version of the implementation in parallel to a basic implementation, then swap them out, without interferring with the main library interface. This `moon.link` library is basically the specification for the standard library. It could also be used in other programming languages as it doesn't have any implementation.
-
-## Outline
-
-The goal with the moon project is to define the properties and functions of a basic programming environment, without defining the implementation. This way a person making a programming language could just look at the "spec" of all the things needed to implement, and start implementing that. The wolf project then is one possible implementation of this spec.
-
-The project is divided into 3 main code folders:
-
-- `code/form`: These are the form masks, the form interfaces so to speak.
-- `code/suit`: These are the suit masks, the traits so to speak.
-- `code/task`: These are generic top-level task/function interfaces.
-
-These can be imported and used in a project, rather than importing wolf, as the base types.
-
 ## License
 
 Copyright 2022-2023 <a href='https://tune.bond'>TuneBond</a>
