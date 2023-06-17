@@ -1,4 +1,7 @@
 
+# there are no exposed properties on this
+# that would be the internals of the hash table.
+# there is only methods to access the internals.
 form hash
   head k
   head v
@@ -71,3 +74,24 @@ form hash
       head k
       head v
     like string
+
+form hash
+  note <A map or dictionary, a lookup.>
+  task get-for-mutation
+  task set
+  task clear
+  task clear-all
+  task walk-keys-and-consume
+  task walk-keys
+  task walk-values
+  task walk-values-and-consume
+  task walk
+  task get-size
+  task is-empty
+  task retain
+  task reserve
+  task try-reserve
+  task shrink-to-fit
+  task has
+  task clone
+  task format

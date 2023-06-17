@@ -3,17 +3,17 @@ tree access
   take name
   take type
 
-  hook bind
-    task get-{name}
+  hook fuse
+    task get-{{name}}
       free result, like type
 
-    task set-{name}, like type
+    task set-{{name}}, like type
 
 tree define-each
   take list
   take tree-name
 
-  hook bind
+  hook fuse
     slot file
     walk list, loan list
       hook step
