@@ -1,4 +1,5 @@
 
 deck @tunebond/crow
+  sort tool
   bear ./code
   mark <0.0.1>

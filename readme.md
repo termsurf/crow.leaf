@@ -12,100 +12,12 @@
 
 <h3 align='center'>crow.link</h3>
 <p align='center'>
-  The Base Link Application Framework
+  The Base Link UI Framework
 </p>
 
 <br/>
 <br/>
 <br/>
-
-## Usage
-
-From nothing:
-
-```
-base make @tunebond/crow
-```
-
-That runs the executable in `@tunebond/crow#make` and gives you a starter project. Otherwise here are the more manual steps:
-
-```
-base link deck @tunebond/crow
-```
-
-Add to the `dock/role/base.link` file.
-
-```
-load @tunebond/crow
-  find mind code
-
-role code
-  link ./**/test.link
-  link ./**/base.link
-```
-
-Then in a code formatted file:
-
-```
-load @tunebond/crow
-  find dock button
-  find task draw
-  find form base
-
-host button-style
-  host fill, text <red>
-  host hover
-    host fill, text <blue>
-
-call draw
-  zone button, text <hello world>
-    vibe button-style
-    hook click
-      show <clicked!>
-
-form user
-  link email, like text
-
-form post
-  link title, like text
-
-# schema
-host base
-  make base
-    form user
-    form post
-```
-
-All the components can be access directly from that import, but in case you need something internal, dig into `@tunebond/crow/code/**/*.link`.
-
-Then build the package into the `./cast` folder.
-
-```
-base cast deck
-```
-
-## Development
-
-<p align='center'>
-  <img src='https://github.com/tunebond/crow.link/blob/make/view/base.logo.svg?raw=true' height='256'>
-</p>
-
-```
-pnpm add @tunebond/base -g
-git clone git@github.com:tunebond/crow.link.git
-cd crow.link
-base load deck
-```
-
-Then run the tests in `crow.link`.
-
-```
-base test deck
-```
-
-It should print out the test results in the terminal using Node.js for now.
-
-Fiddle around with the test files to get a sense for what's being tested and what's missing. It has a long ways to go!
 
 ## License
 
