@@ -12,7 +12,7 @@
 
 <h3 align='center'>crow.link</h3>
 <p align='center'>
-  The Base Link UI Framework
+  The BaseLink UI Framework
 </p>
 
 <br/>
