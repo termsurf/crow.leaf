@@ -1,7 +1,7 @@
 
 # cli
 
-load @tunebond/nest
+load @nerdbond/nest
   find task read
   find task write
 
