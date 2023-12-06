@@ -1,7 +1,7 @@
 
 # cli
 
-load @wavebond/nest
+load @textsurf/nest
   find task read
   find task write
 
