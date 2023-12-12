@@ -1,7 +1,7 @@
 
 # cli
 
-load @textsurf/nest
+load @termsurf/nest
   find task read
   find task write
 
