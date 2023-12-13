@@ -7,10 +7,10 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/termsurf/crow.link/blob/make/view/view.svg?raw=true' height='312'>
+  <img src='https://github.com/termsurf/crow.note/blob/make/view/view.svg?raw=true' height='312'>
 </p>
 
-<h3 align='center'>crow.link</h3>
+<h3 align='center'>crow.note</h3>
 <p align='center'>
   The BaseLink UI Framework
 </p>
