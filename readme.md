@@ -12,7 +12,7 @@
 
 <h3 align='center'>crow.note</h3>
 <p align='center'>
-  The BaseLink UI Framework
+  The BaseNote UI Framework
 </p>
 
 <br/>
