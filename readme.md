@@ -7,12 +7,12 @@
 <br/>
 
 <p align='center'>
-  <img src='https://github.com/termsurf/crow.leaf/blob/make/view/view.svg?raw=true' height='312'>
+  <img src='https://github.com/termsurf/crow.star/blob/make/view/view.svg?raw=true' height='312'>
 </p>
 
-<h3 align='center'>crow.leaf</h3>
+<h3 align='center'>crow.star</h3>
 <p align='center'>
-  The SeedLeaf UI Framework
+  The Star UI Framework
 </p>
 
 <br/>
